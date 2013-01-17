@@ -1,0 +1,55 @@
+---------------------------------------------
+* Kundeportal
+https://kunde.fasthost.no 
+Brukernavn: tj@cperio.no
+Passord: jcd7h2hJ
+
+* Webhotell: 
+FTP-server: web01.fasthost.no (eller coperiosenteret.no, eller
+www.coperio.no, etc) 
+Brukernavn: matsbr 
+Passord: jcd7h2hJ
+
+* MySQL: 
+MySQL-server: localhost
+Brukernavn: matsbr
+Database: matsbr
+Passord: jcd7h2hJ
+
+Si fra om det er noe annet du trenger informasjon om. --
+Andreas Folvell
+Availo AS (tidligere Ventelo Hosting AS / FastHost AS)
+Dir: 21 65 00 60 / Mob: 47 46 28 60
+---------------------------------------------
+
+# joomla
+*Installation: 
+** locally first
+** export db
+** import db on server
+** copy joomla content
+** change configuration file
+** it should be working. 
+
+joomla version: 2.5.8
+joomla db prefix: ahmy4_
+placement: coperio.no/joomla/
+
+# Domene
+registrar: http://www.availo.no/
+
+# Todo
+Server Access
+Joomla install
+
+crossplatform
+facbook integrasjon (plugin)
+kontaktskjema
+newsfeed (plugin?)
+
+Kursside
+-add/remove
+-list
+-påmelding
+
+

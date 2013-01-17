@@ -1,0 +1,18 @@
+
+# zimbra admin
+https://zimbra.coperio.no:7071/zimbraAdmin/
+
+# Outlook config
+Imap-server:(inkommende server) zimbra.coperio.no
+
+Utgående server: smtp.online.no (ikke korrekt)
+
+Pluss brukernavn og passord. 
+
+
+# mailserver
+
+zimbra.comperio.no = 109.239.232.210
+utgående mail server?? = mail.fasthost.no
+
+
