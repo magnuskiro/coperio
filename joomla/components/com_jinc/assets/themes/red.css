@@ -1,9 +1,9 @@
 .jinc_error {
     border-bottom-style: solid;
-    border-bottom-color: red;
+    border-bottom-color: #6699cc;
     border-bottom-width: 2px;
     border-top-style: solid;
-    border-top-color: red;
+    border-top-color: #6699cc;
     border-top-width: 2px;
     padding-left: 15px;
     padding-right: 15px;
@@ -15,10 +15,10 @@
 
 .jinc_caption {
     border-bottom-style: solid;
-    border-bottom-color: red;
+    border-bottom-color: #6699cc;
     border-bottom-width: 2px;
     border-top-style: solid;
-    border-top-color: red;
+    border-top-color: #6699cc;
     border-top-width: 2px;
     padding-left: 15px;
     padding-right: 15px;
@@ -31,8 +31,8 @@
 
 .jinc_description {
     background: #FFF repeat-x scroll center left;
-    border-bottom: 1px solid #FF0000;
-    border-top: 1px solid #FF0000;
+    border-bottom: 0px solid #FF0000;
+    border-top: 0px solid #FF0000;
     font: normal normal 12px Verdana, Geneva, Arial, Helvetica, sans-serif;
     padding: 5px;
     margin-bottom: 10px;
@@ -171,11 +171,11 @@
 .jinc_msg_title, .jinc_err_msg_title {
     border-top-width: 2px;
     border-top-style: solid;
-    border-top-color: red;
+    border-top-color: #6699cc;
     border-top-width: 2px;
     border-bottom-width: 2px;
     border-bottom-style: solid;
-    border-bottom-color: red;
+    border-bottom-color: #6699cc;
     border-bottom-width: 2px;    
     padding-left: 15px;
     padding-right: 15px;
@@ -188,10 +188,10 @@
 
 .jinc_msg_subtitle, .jinc_err_msg_subtitle {
     border-top-style: solid;
-    border-top-color: red;
+    border-top-color: #6699cc;
     border-top-width: 1px;
     border-bottom-style: dotted;
-    border-bottom-color: red;
+    border-bottom-color: #6699cc;
     border-bottom-width: 1px;
     padding-left: 15px;
     padding-right: 15px;
@@ -203,10 +203,10 @@
 
 .jinc_msg_text, .jinc_err_msg_text {
     border-top-style: solid;
-    border-top-color: red;
+    border-top-color: #6699cc;
     border-top-width: 1px;    
     border-bottom-style: solid;
-    border-bottom-color: red;
+    border-bottom-color: #6699cc;
     border-bottom-width: 1px;
     padding-left: 15px;
     padding-right: 15px;
