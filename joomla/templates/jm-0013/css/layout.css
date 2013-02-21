@@ -1,0 +1,245 @@
+/*--------------------------------------------------------------
+# Copyright (C) joomla-monster.com
+# License: http://www.joomla-monster.com/license.html Joomla-Monster Proprietary Use License
+# Website: http://www.joomla-monster.com
+# Support: info@joomla-monster.com
+---------------------------------------------------------------*/
+
+/*********** LAYOUT STYLES **********/
+
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#all {
+    font-size: 12px;
+    line-height: 20px;
+    text-align: left;
+}
+
+.smallview #pageAll { /*CSS for "small font" setting*/
+    font-size: 11px;
+    line-height: 19px;
+}
+
+.normalview #pageAll { /*CSS to return page to default setting (with no additional CSS rules added)*/
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.largeview #pageAll { /*CSS for "large font" setting*/
+    font-size: 14px;
+    line-height: 22px;
+}
+
+#pageAll {
+    margin: 0 auto;
+    padding: 3px 0 0 0;
+}
+
+#topModule {
+    padding: 10px 0;
+}
+
+#logoSearch {
+    padding: 10px 0px 20px 0px;
+}
+
+#logo_sitedesc {
+    float: left;
+    padding: 0 0 0 7px;
+}
+
+#logo {
+	margin: 0;
+	font-weight: normal;
+}
+
+#sitedesc {
+	display: block;
+}
+
+#search {
+    float: right;
+    padding: 20px 0;
+}
+
+#topmenuIcons {
+    height: 36px;
+	margin: 0 0 1px;
+}
+
+#icons {
+    float: left;
+    width: 21%;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+#widtharea, #stylearea {
+    float: left;
+}
+
+#topmenu {
+    float: right;
+    width: 76%;
+    text-align: right;
+}
+
+#widtharea {
+    padding: 0 15px 0 0;
+}
+
+#header {
+    margin: 0 0 1px 0;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+#headerModule {
+    width: 60%;
+    position: absolute;
+    z-index: 2;
+    top: 10px;
+    left: 30%;
+    padding: 0 20px 20px 0;
+}
+
+#user1_user2 {
+    margin: 0 0 1px 0;
+}
+
+#user1, #user2 {
+    float: left;
+    width: 50%;
+}
+
+#user5 {
+    padding: 0 15px;
+    margin: 0 0 15px 0;
+}
+
+#pathwayFonts {
+    margin: 0;
+    padding: 12px 0;
+}
+
+#pathway {
+    float: left;
+    width: 88%;
+    color: #006383;
+    padding-left: 7px;
+}
+
+#fonts {
+    float: right;
+    width: 10%;
+    text-align: right;
+    padding: 3px 0 0 0;
+}
+
+#footer {
+    padding: 10px 0;
+}
+
+#xhtmlCss {
+    float: left;
+    width: 70%;
+}
+
+#rss {
+    float: right;
+    width: 30%;
+    text-align: right;
+}
+
+/**bottom modules**/
+
+#modules-bottom.m4 div.modules-bottom-in {
+    float: left;
+    width: 24.6%;
+}
+
+#modules-bottom.m3 div.modules-bottom-in {
+    float: left;
+    width: 33%;
+}
+
+#modules-bottom.m2 div.modules-bottom-in {
+    float: left;
+    width: 50%;
+}
+
+#modules-bottom.m1 div.modules-bottom-in {
+    float: left;
+    width: 100%;
+}
+
+/****/
+
+#wrapper {
+    padding: 15px 0 0;
+}
+
+#maincontent {
+    padding: 0 15px 15px;
+}
+
+#left {
+    float: left;
+    width: 20%;
+}
+
+#right {
+    float: left;
+    width: 20%;
+}
+
+#wrapper.scheme_3 #content {
+    float: left;
+    width: 60%;
+}
+
+#wrapper.scheme_2 #content {
+    float: left;
+    width: 80%;
+}
+
+#wrapper.scheme_1 #content {
+    float: left;
+    width: 100%;
+}
+
+/**clearing**/
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    min-width: 0;
+    display: inline-block; /* \*/
+    display: block;
+}
+
+/* trigger hasLayout for IE7. Hide from IE Mac */ * html .clearfix {
+    height: 1%;
+}
+
+/* Hide from IE Mac */
+.clr, .clear {
+    clear: both;    
+}

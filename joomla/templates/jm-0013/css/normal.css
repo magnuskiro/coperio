@@ -1,0 +1,91 @@
+/*--------------------------------------------------------------
+# Copyright (C) joomla-monster.com
+# License: http://www.joomla-monster.com/license.html Joomla-Monster Proprietary Use License
+# Website: http://www.joomla-monster.com
+# Support: info@joomla-monster.com
+---------------------------------------------------------------*/
+
+/*********** DETAILS OF LAYOUT ELEMENTS **********/
+
+#logo img, 
+#header img {
+    vertical-align: top;
+}
+
+#header p {
+    margin: 0;
+}
+
+#icons a:link, 
+#icons a:visited {
+    margin: 0 3px 0 0;
+    outline: none;
+	display: inline-block;
+}
+
+#rss a:link, 
+#rss a:visited {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+fieldset.input {
+    border: 0;
+}
+
+#fonts a {
+    width: 16px;
+    height: 16px;
+    float: right;
+    margin-left: 5px;
+}
+
+div.mod-languages ul {
+	list-style: none;
+}
+
+div.mod-languages ul li {
+	background: none;
+	padding: 0;
+}
+
+/**pathway**/
+
+#pathway div.breadcrumbs span.showHere {
+	font-weight: bold;
+	margin: 0 5px 0 0;
+}
+
+/**search**/
+
+#search div.search .inputbox {
+    border-bottom: 0px;
+    border-right: 0px;
+    height: 17px;
+    width: 165px;
+    font-weight: normal;
+    color: #ffffff;
+    margin: 0;
+    padding: 2px 0px 2px 4px;
+	float: left;
+}
+
+#search div.search .button {
+    border: 0px;
+    width: 22px;
+    height: 22px;
+    font-size: 0;
+	float: left;
+    font-weight: bold;
+    margin: 0 0 0 5px;
+    padding: 0;
+    text-indent: -5000px;
+}
+
+#search div.search label {
+	float: left;
+	line-height: 22px;
+	font-size: 11px;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	margin: 0 5px;
+}

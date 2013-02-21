@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.6//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension version="1.7" type="template" client="site">
+	<name>jm-0013</name>
+	<creationDate>10/10/2011</creationDate>
+	<author>joomla-monster.com</author>
+	<copyright>joomla-monster.com</copyright>
+	<authorEmail>joomla-monster@design-joomla.eu</authorEmail>
+	<authorUrl>joomla-monster.com</authorUrl>
+	<version>1.7</version>
+	<description><![CDATA[
+	<head>
+		<style>
+			body {
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 11px;
+			}
+			a:link,
+			a:visited {
+				color: #4991c1;
+				font-weight: bold;
+			}
+			a:hover {
+				text-decoration: underline;
+			}
+			h2 {
+				color: #fa9539;
+				text-transform: uppercase;
+				font-size: 16px;
+				padding: 0;
+				margin: 2px 0;
+			}
+			p {
+				padding: 0;
+				margin: 4px 0;
+			}
+			#left-logo {
+				float: left;
+				width: 320px;
+				height: 100px;
+				display: block;
+				padding-top: 50px;
+			}
+			#right-text {
+				float: left;
+				width: 400px;
+			}
+			#info {
+				border: 1px solid #efefef;
+				padding: 10px;
+				background: #ffffff;
+			}
+			#info p {
+				font-size: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="left-logo">
+			<img src="http://joomla-monster.com/images/jm-logo.png" />
+		</div>
+		<div id="right-text">
+			<h2>Template jm-0013</h2>
+			<p><b>Templates for Joomla! CMS</b></p>
+			<div id="info">
+				<p><b>Version:</b> 1.7</p>
+				<p><b>Date:</b> October 2011</p>
+				<p><b>Client:</b> Random</p>
+			</div>
+			<p>
+			Unique and oryginal templates for <b>Joomla! CMS</b><br />
+			Graphic design & template code: <b>design-joomla.eu</b><br />
+			<a href="http://www.design-joomla.eu">http://www.design-joomla.eu</a><br /><br />
+			</p>
+		</div>
+	</body>
+	]]></description>
+	<files>
+		<filename>component.php</filename>
+		<filename>index.html</filename>
+		<filename>index.php</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<folder>css</folder>
+		<folder>html</folder>
+		<folder>images</folder>
+		<folder>lib</folder>
+	</files>
+	<positions>
+		<position>top</position>
+		<position>left</position>
+		<position>right</position>
+		<position>position-0</position>
+		<position>position-2</position>
+		<position>position-4</position>
+		<position>position-5</position>
+		<position>position-7</position>
+		<position>topmenu</position>
+		<position>user1</position>
+		<position>user2</position>
+		<position>user5</position>
+		<position>slogan</position>
+		<position>header</position>
+		<position>syndicateload</position>
+		<position>bottom1</position>
+		<position>bottom2</position>
+		<position>bottom3</position>
+		<position>bottom4</position>
+	</positions>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="fontswitcher" type="list" default="1" label="Font switcher" description="Enable this option if you want to enable font switcher">
+			            <option value="1">Enabled</option>
+			            <option value="0">Disabled</option>
+			    </field>
+			    <field name="fontsize" type="list" default="12" label="Font size in pixels" description="Choose font size if font switcher is disabled">
+			            <option value="11">11</option>
+			            <option value="12">12</option>
+			            <option value="14">14</option>
+			    </field>
+			    <field name="stylearea" type="list" default="1" label="Style switcher" description="Enable this option if you want to enable style switcher">
+			            <option value="1">Enabled</option>
+			            <option value="0">Disabled</option>
+			    </field>   
+			    <field name="template_color" type="list" default="1" label="Template color" description="Select default template color">
+			            <option value="1">Blue</option>
+			            <option value="2">Green </option>
+			            <option value="3">Orange</option>
+			            <option value="4">Red</option>
+			     </field> 
+			     <field name="widtharea" type="list" default="1" label="Width switcher" description="Enable this option if you want to enable width switcher">
+			            <option value="1">Enabled</option>
+			            <option value="0">Disabled</option>
+			     </field>     
+			     <field name="page_width" type="text" default="960px" label="Page width" description="Set width of page container - use px or % e.g. 890px or 100%" /> 
+			     <field name="logo" type="media" hide_default="1" label="Logo path" description="Set path to the logo - note that logo dimensions won't be resized" />
+				 <field name="sitetitle" type="text" default="" label="Site title" description="Please add your site title here, it's only displayed if you don't use a logo" filter="string" />
+				 <field name="sitedescription" type="text" default="" label="Site description" description="Please add your site description here" filter="string" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>
