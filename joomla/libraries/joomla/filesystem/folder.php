@@ -237,13 +237,17 @@ abstract class JFolder
 				foreach ($obdArray as $test)
 				{
 					$test = JPath::clean($test);
-					if (strpos($path, $test) === 0)
+					// changed - kirø 
+					// if (strpos($path, $test) === 0)
+					if (strpos($path, $test) === 1)
 					{
 						$inBaseDir = true;
 						break;
 					}
 				}
-				if ($inBaseDir == false)
+				// changed - kirø 
+				//if ($inBaseDir == false)
+				if ($inBaseDir == true)
 				{
 					// Return false for JFolder::create because the path to be created is not in open_basedir
 					JError::raiseWarning('SOME_ERROR_CODE', __METHOD__ . ': ' . JText::_('JLIB_FILESYSTEM_ERROR_FOLDER_PATH'));

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<flash_parameters copyright="anvsoftPFMTheme">
+<preferences>
+<global>
+<basic_property movieWidth="722" movieHeight="283" html_title="Title" loadStyle="Pie" startAutoPlay="true" continuum="true" backgroundColor="0xffffff" anvsoftMenu="false" hideAdobeMenu="false" photoDynamicShow="false" enableURL="true" transitionArray="" clickToAutoPlay="false" frameRate="30"/>
+<title_property showTitle="true" photoTitleColor="0xfffbf0" backgroundColor="0xc0c0c0" alpha="0" autoHide="true"/>
+<music_property path="" stream="true" loop="true" enableVolumeDrag="true" defaultVolume="70"/>
+<photo_property topPadding="1" bottomPadding="27" leftPadding="1" rightPadding="1"/>
+<properties enable="true" backgroundColor="0x808080" backgroundAlpha="0" cssText="a:link{text-decoration: underline;} a:hover{color:#ff0000; text-decoration: none;} a:active{color:#0000ff;text-decoration: none;} .blue {color:#0000ff; font-size:15px; font-style:italic; text-decoration: underline;} .body{color:#ff5500;font-size:20px;}" align="bottom"/>
+</global>
+<thumbnail>
+<basic_property thumWidth="60" thumHeight="40" thumBackColor="0xf0f0f0" thumborder="1" thumSpacing="1" buttonColor="0x2d2d2d" buttonbgColor="0xd2d2d2"/>
+</thumbnail>
+</preferences>
+<!-- links to www.pickjoomla.com must not be removed -->
+<album>
+<slide jpegURL="thumbs/t_0001.jpg" d_URL="slides/header1.jpg" transition="51" panzoom="1" URLTarget="0" phototime="2" transitiontime="2" url="http://www.pickjoomla.com" title="header1" width="722" height="283"/>
+<slide jpegURL="thumbs/t_0002.jpg" d_URL="slides/header2.jpg" transition="39" panzoom="1" URLTarget="0" phototime="2" transitiontime="2" url="http://www.pickjoomla.com" title="header2" width="722" height="283"/>
+<slide jpegURL="thumbs/t_0003.jpg" d_URL="slides/header3.jpg" transition="43" panzoom="1" URLTarget="0" phototime="2" transitiontime="2" url="http://www.pickjoomla.com" title="header3" width="722" height="283"/>
+<slide jpegURL="thumbs/t_0004.jpg" d_URL="slides/header4.jpg" transition="41" panzoom="1" URLTarget="0" phototime="2" transitiontime="2" url="http://www.pickjoomla.com" title="header4" width="722" height="283"/>
+<slide jpegURL="thumbs/t_0005.jpg" d_URL="slides/header5.jpg" transition="24" panzoom="1" URLTarget="0" phototime="2" transitiontime="2" url="http://www.pickjoomla.com" title="header5" width="722" height="283"/>
+</album>
+</flash_parameters>

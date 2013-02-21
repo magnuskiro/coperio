@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- $Id: install.xml 2243 2012-06-19 20:02:30Z rued $ -->
+<extension version="2.5" client="site" type="language" method="upgrade">
+    <name>Norsk bokmål (Norway)</name>
+    <tag>nb-NO</tag>
+    <version>2.5.9.1</version>
+    <creationDate>2013-02-04</creationDate>
+    <author>Norsk Joomla!</author>
+    <authorEmail>oversettelser@norskjoomla.no</authorEmail>
+    <authorUrl>http://www.norskjoomla.no</authorUrl>
+    <copyright>Copyright (C) 2005 - 2013 Open Source Matters &amp; Norsk Joomla!. All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <description>Norwegian bokmål site language for Joomla! 2.5</description>
+    <files>
+        <filename>index.html</filename>
+        <filename>nb-NO.com_contact.ini</filename>
+        <filename>nb-NO.com_content.ini</filename>
+        <filename>nb-NO.com_finder.ini</filename>
+        <filename>nb-NO.com_mailto.ini</filename>
+        <filename>nb-NO.com_media.ini</filename>
+        <filename>nb-NO.com_messages.ini</filename>
+        <filename>nb-NO.com_newsfeeds.ini</filename>
+        <filename>nb-NO.com_search.ini</filename>
+        <filename>nb-NO.com_users.ini</filename>
+        <filename>nb-NO.com_weblinks.ini</filename>
+        <filename>nb-NO.com_wrapper.ini</filename>
+        <filename>nb-NO.files_joomla.sys.ini</filename>
+        <filename>nb-NO.finder_cli.ini</filename>
+        <filename>nb-NO.ini</filename>
+        <filename>nb-NO.lib_joomla.ini</filename>
+        <filename>nb-NO.lib_joomla.sys.ini</filename>
+        <filename>nb-NO.lib_phpmailer.sys.ini</filename>
+        <filename>nb-NO.lib_phputf8.sys.ini</filename>
+        <filename>nb-NO.lib_simplepie.sys.ini</filename>
+        <filename>nb-NO.localise.php</filename>
+        <filename>nb-NO.mod_articles_archive.ini</filename>
+        <filename>nb-NO.mod_articles_archive.sys.ini</filename>
+        <filename>nb-NO.mod_articles_categories.ini</filename>
+        <filename>nb-NO.mod_articles_categories.sys.ini</filename>
+        <filename>nb-NO.mod_articles_category.ini</filename>
+        <filename>nb-NO.mod_articles_category.sys.ini</filename>
+        <filename>nb-NO.mod_articles_latest.ini</filename>
+        <filename>nb-NO.mod_articles_latest.sys.ini</filename>
+        <filename>nb-NO.mod_articles_news.ini</filename>
+        <filename>nb-NO.mod_articles_news.sys.ini</filename>
+        <filename>nb-NO.mod_articles_popular.ini</filename>
+        <filename>nb-NO.mod_articles_popular.sys.ini</filename>
+        <filename>nb-NO.mod_banners.ini</filename>
+        <filename>nb-NO.mod_banners.sys.ini</filename>
+        <filename>nb-NO.mod_breadcrumbs.ini</filename>
+        <filename>nb-NO.mod_breadcrumbs.sys.ini</filename>
+        <filename>nb-NO.mod_custom.ini</filename>
+        <filename>nb-NO.mod_custom.sys.ini</filename>
+        <filename>nb-NO.mod_feed.ini</filename>
+        <filename>nb-NO.mod_feed.sys.ini</filename>
+        <filename>nb-NO.mod_finder.ini</filename>
+        <filename>nb-NO.mod_finder.sys.ini</filename>
+        <filename>nb-NO.mod_footer.ini</filename>
+        <filename>nb-NO.mod_footer.sys.ini</filename>
+        <filename>nb-NO.mod_languages.ini</filename>
+        <filename>nb-NO.mod_languages.sys.ini</filename>
+        <filename>nb-NO.mod_login.ini</filename>
+        <filename>nb-NO.mod_login.sys.ini</filename>
+        <filename>nb-NO.mod_menu.ini</filename>
+        <filename>nb-NO.mod_menu.sys.ini</filename>
+        <filename>nb-NO.mod_random_image.ini</filename>
+        <filename>nb-NO.mod_random_image.sys.ini</filename>
+        <filename>nb-NO.mod_related_items.ini</filename>
+        <filename>nb-NO.mod_related_items.sys.ini</filename>
+        <filename>nb-NO.mod_search.ini</filename>
+        <filename>nb-NO.mod_search.sys.ini</filename>
+        <filename>nb-NO.mod_stats.ini</filename>
+        <filename>nb-NO.mod_stats.sys.ini</filename>
+        <filename>nb-NO.mod_syndicate.ini</filename>
+        <filename>nb-NO.mod_syndicate.sys.ini</filename>
+        <filename>nb-NO.mod_users_latest.ini</filename>
+        <filename>nb-NO.mod_users_latest.sys.ini</filename>
+        <filename>nb-NO.mod_weblinks.ini</filename>
+        <filename>nb-NO.mod_weblinks.sys.ini</filename>
+        <filename>nb-NO.mod_whosonline.ini</filename>
+        <filename>nb-NO.mod_whosonline.sys.ini</filename>
+        <filename>nb-NO.mod_wrapper.ini</filename>
+        <filename>nb-NO.mod_wrapper.sys.ini</filename>
+        <filename>nb-NO.pkg_joomla.sys.ini</filename>
+        <filename>nb-NO.tpl_atomic.ini</filename>
+        <filename>nb-NO.tpl_atomic.sys.ini</filename>
+        <filename>nb-NO.tpl_beez_20.ini</filename>
+        <filename>nb-NO.tpl_beez_20.sys.ini</filename>
+        <filename>nb-NO.tpl_beez5.ini</filename>
+        <filename>nb-NO.tpl_beez5.sys.ini</filename>
+        <filename file="meta">nb-NO.xml</filename>
+        <filename file="meta">install.xml</filename>
+      </files>
+</extension>

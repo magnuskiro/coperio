@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<extension type="module" version="1.6.0" client="site" method="upgrade">
+    <name>JINC Newsletter Access Module</name>
+    <creationDate>October 2011</creationDate>
+    <author>Lhacky</author>
+    <authorEmail>lhacky@altervista.org</authorEmail>
+    <authorUrl>http://lhacky.altervista.org/jextensions/</authorUrl>
+    <copyright>Copyright (C) 2010 - Lhacky</copyright>
+    <license>GNU/GPL http://www.gnu.org/licenses/gpl-2.0.html</license>
+    <version>1.0</version>
+    <description>List newsletters accessible by a user</description>
+    <files>
+        <filename module="mod_jinc_news_access">index.html</filename>
+        <filename module="mod_jinc_news_access">mod_jinc_news_access.php</filename>
+    </files>
+    <params>
+        <param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+    </params>
+</extension>

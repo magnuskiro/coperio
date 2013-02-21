@@ -1,0 +1,31 @@
+/*--------------------------------------------------------------
+# Copyright (C) joomla-monster.com
+# License: http://www.joomla-monster.com/license.html Joomla-Monster Proprietary Use License
+# Website: http://www.joomla-monster.com
+# Support: info@joomla-monster.com
+---------------------------------------------------------------*/
+
+/*********** IE7 RTL STYLES **********/
+
+#icons {
+    float: left;
+    padding-left: 20px;
+	padding-right: 0;
+}
+
+#widtharea {
+    padding: 0 15px 0 0;
+}
+
+#widtharea, #stylearea {
+    float: left;
+}
+
+#topmenu {
+    float: right;
+}
+
+#search,
+#logo_sitedesc {
+	width: 400px;
+}

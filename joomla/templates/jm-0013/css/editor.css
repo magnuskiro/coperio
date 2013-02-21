@@ -1,0 +1,151 @@
+/*--------------------------------------------------------------
+# Copyright (C) joomla-monster.com
+# License: http://www.joomla-monster.com/license.html Joomla-Monster Proprietary Use License
+# Website: http://www.joomla-monster.com
+# Support: info@joomla-monster.com
+---------------------------------------------------------------*/
+
+/*********** EDITOR STYLES **********/
+
+body {
+    background: #fff;
+}
+
+.border_img {
+    border: 1px solid #aaa;
+    margin: 0 5px;
+}
+
+div.moduleIn .border_img {
+    margin: 0;
+}
+
+.readon {
+}
+
+p.error {
+    background: #f5e7e7 url(../images/error.gif) no-repeat scroll 10px 8px;
+    border-top: 2px solid #b1360d;
+    border-bottom: 2px solid #b1360d;
+    color: #b1360d;
+    display: block;
+    font-weight: normal;
+    padding: 5px 15px 5px 40px;
+    text-align: justify;
+}
+
+p.tips {
+    background: #edf2fd url(../images/tips.gif) no-repeat scroll 15px 8px;
+    border-top: 2px solid #7aa3fc;
+    border-bottom: 2px solid #7aa3fc;
+    color: #7aa3fc;
+    display: block;
+    font-weight: normal;
+    padding: 5px 15px 5px 40px;
+    text-align: justify;
+}
+
+p.info {
+    background: #fbf6e4 url(../images/info.gif) no-repeat scroll 15px 8px;
+    border-top: 2px solid #cd7f4d;
+    border-bottom: 2px solid #cd7f4d;
+    color: #cd7f4d;
+    display: block;
+    font-weight: normal;
+    padding: 5px 15px 5px 40px;
+    text-align: justify;
+}
+
+/* design of paragraph with class = blue */
+p.blue {
+    display: block;
+    padding: 7px;
+    text-align: justify;
+    color: #2d4db2;
+    background: #c9d8f6;
+    border-top: 1px solid #4e7bf4;
+    border-bottom: 1px solid #4e7bf4;
+}
+
+/* design of paragraph with class = red */
+p.red {
+    display: block;
+    padding: 7px;
+    text-align: justify;
+    color: #7b0e1a;
+    background: #eac4c8;
+    border-top: 1px solid #d62f40;
+    border-bottom: 1px solid #d62f40;
+}
+
+/* design of paragraph with class = blue */
+p.blue {
+    display: block;
+    padding: 7px;
+    text-align: justify;
+    color: #2d4db2;
+    background: #c9d8f6;
+    border-top: 1px solid #4e7bf4;
+    border-bottom: 1px solid #4e7bf4;
+}
+
+/* design of paragraph with class = yellow */
+p.yellow {
+    display: block;
+    padding: 7px;
+    text-align: justify;
+    color: #b18021;
+    background: #f2e5c5;
+    border-top: 1px solid #e6ae3b;
+    border-bottom: 1px solid #e6ae3b;
+}
+
+/* design of paragraph with class = grey */
+p.grey {
+    display: block;
+    padding: 7px;
+    text-align: justify;
+    color: #565353;
+    background: #ddd;
+    border-top: 1px solid #8f8f8f;
+    border-bottom: 1px solid #8f8f8f;
+}
+
+/* design of paragraph with class = green */
+p.green {
+    display: block;
+    padding: 7px;
+    text-align: justify;
+    color: #444a12;
+    background: #f0f1e6;
+    border-top: 1px solid #6b751e;
+    border-bottom: 1px solid #6b751e;
+}
+
+.colortable {
+}
+
+.colortable th {
+    padding: 5px;
+    font-weight: bold;
+    color: #fff;
+    background: #019FD5;
+}
+
+.colortable td {
+    padding: 5px;
+    border-bottom: 1px solid #fff;
+}
+
+.colortable tr {
+    background: #EDF4F6;
+}
+
+ul.circle, ul.circle ul {
+    list-style: none;
+}
+
+ul.circle li {
+    background: url("../images/licircle.png") left 4px no-repeat;
+    padding: 0 0 0 15px;
+}

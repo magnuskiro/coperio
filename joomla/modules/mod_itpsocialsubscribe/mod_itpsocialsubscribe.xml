@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" client="site" method="upgrade">
+	<name>MOD_ITPSOCIALSUBSCRIBE</name>
+	<author>Todor Iliev</author>
+	<creationDate>February, 2012</creationDate>
+	<copyright>Copyright (C) 2010 Todor Iliev ( ITPrism.com )</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html</license>
+	<authorEmail>todor@itprism.com</authorEmail>
+	<authorUrl>http://itprism.com</authorUrl>
+	<version>1.1</version>
+	<description>MOD_ITPSOCIALSUBSCRIBE_DESC</description>
+	
+	<languages folder="language">
+        <language tag="en-GB">en-GB/en-GB.mod_itpsocialsubscribe.ini</language>
+        <language tag="en-GB">en-GB/en-GB.mod_itpsocialsubscribe.sys.ini</language>
+    </languages> 
+    
+    <help url="MOD_ITPSOCIALSUBSCRIBE_HELP_URL"/>
+    
+	<files>
+		<filename module="mod_itpsocialsubscribe">mod_itpsocialsubscribe.php</filename>
+		<filename>index.html</filename>
+		<filename>helper.php</filename>
+		<filename>style.css</filename>
+		<filename>README.md</filename>
+		<folder>tmpl</folder>
+		<folder>images</folder>
+	</files>
+
+	<config>
+        <fields name="params">
+            <fieldset name="basic">
+            
+                <field name="spacer1" type="spacer" class="text" label="MOD_ITPSOCIALSUBSCRIBE_FACEBOOK_SETTINGS" />
+                <field name="facebookLikeButton" type="radio" default="1" label="MOD_ITPSOCIALSUBSCRIBE_FACEBOOK_BUTTON" description="MOD_ITPSOCIALSUBSCRIBE_FACEBOOK_BUTTON_DESC" >
+                   <option value="0">JHIDE</option>
+                   <option value="1">JSHOW</option>
+                </field>
+                <field name="facebookLikePageAddress" type="text" default="http://facebook.com/itprism" size="80" label="MOD_ITPSOCIALSUBSCRIBE_FACEBOOK_ADDRESS" description="MOD_ITPSOCIALSUBSCRIBE_FACEBOOK_ADDRESS_DESC" />
+                <field name="facebookLikeRenderer" type="list" default="2" label="MOD_ITPSOCIALSUBSCRIBE_FACEBOOK_RENDERER" description="MOD_ITPSOCIALSUBSCRIBE_FACEBOOK_RENDERER_DESC" >
+                   <option value="0">iframe</option>
+                   <option value="1">XFBML</option>
+                   <option value="2">HTML5</option>
+                </field>
+                <field name="facebookLikeAction" type="list" default="like" label="MOD_ITPSOCIALSUBSCRIBE_FACEBOOK_TEXT" description="MOD_ITPSOCIALSUBSCRIBE_FACEBOOK_TEXT_DESC" >
+                   <option value="like">MOD_ITPSOCIALSUBSCRIBE_LIKE</option>
+                   <option value="recommend">MOD_ITPSOCIALSUBSCRIBE_RECOMMEND</option>
+                </field>
+                <field name="facebookLikeFaces" type="radio" default="1" label="MOD_ITPSOCIALSUBSCRIBE_FACEBOOK_FACES" description="MOD_ITPSOCIALSUBSCRIBE_FACEBOOK_FACES_DESC" >
+                   <option value="0">JHIDE</option>
+                   <option value="1">JSHOW</option>
+                </field>
+                <field name="facebookLikeColor" type="list" default="light" label="MOD_ITPSOCIALSUBSCRIBE_FACEBOOK_COLOR" description="MOD_ITPSOCIALSUBSCRIBE_FACEBOOK_COLOR_DESC" >
+                   <option value="light">Light</option>
+                   <option value="dark">Dark</option>
+                </field>
+                <field name="facebookLikeFont" type="list" default="" label="MOD_ITPSOCIALSUBSCRIBE_FACEBOOK_FONT" description="MOD_ITPSOCIALSUBSCRIBE_FACEBOOK_FONT_DESC" >
+                   <option value=""></option>
+                    <option value="arial">arial</option>
+                    <option value="lucida grande">lucida grande</option>
+                    <option value="segoe ui">segoe ui</option>
+                    <option value="tahoma">tahoma</option>
+                    <option value="trebuchet ms">trebuchet ms</option>
+                    <option value="verdana">verdana</option>
+                </field>
+                <field name="facebookLikeWidth" type="text" default="350" label="MOD_ITPSOCIALSUBSCRIBE_FACEBOOK_WIDTH" description="MOD_ITPSOCIALSUBSCRIBE_FACEBOOK_WIDTH_DESC" />
+                <field name="fbLocale" type="list" default="en_US" label="MOD_ITPSOCIALSUBSCRIBE_LANGUAGE" description="MOD_ITPSOCIALSUBSCRIBE_LANGUAGE_DESC">
+                    <option value="af_ZA">MOD_ITPSOCIALSUBSCRIBE_AFRIKAANS</option>
+                    <option value="ar_AR">MOD_ITPSOCIALSUBSCRIBE_ARABIC</option>
+                    <option value="sq_AL">MOD_ITPSOCIALSUBSCRIBE_ALBANIAN</option>
+                    <option value="ay_BO">MOD_ITPSOCIALSUBSCRIBE_AYMARA</option>
+                    <option value="az_AZ">MOD_ITPSOCIALSUBSCRIBE_AZERI</option>
+                    <option value="be_BY">MOD_ITPSOCIALSUBSCRIBE_BELARUSIAN</option>
+                    <option value="bg_BG">MOD_ITPSOCIALSUBSCRIBE_BULGARIAN</option>
+                    <option value="bn_IN">MOD_ITPSOCIALSUBSCRIBE_BENGALI</option>
+                    <option value="bs_BA">MOD_ITPSOCIALSUBSCRIBE_BOSNIAN</option>
+                    <option value="ca_ES">MOD_ITPSOCIALSUBSCRIBE_CATALAN</option>
+                    <option value="zh_CN">MOD_ITPSOCIALSUBSCRIBE_CHINESE_ZH</option>
+                    <option value="zh_HK">MOD_ITPSOCIALSUBSCRIBE_CHINESE_HK</option>
+                    <option value="zh_TW">MOD_ITPSOCIALSUBSCRIBE_CHINESE_TW</option>
+                    <option value="ck_US">MOD_ITPSOCIALSUBSCRIBE_CHEROKEE</option>
+                    <option value="cs_CZ">MOD_ITPSOCIALSUBSCRIBE_CZECH</option>
+                    <option value="cy_GB">MOD_ITPSOCIALSUBSCRIBE_WELSH</option>
+                    <option value="da_DK">MOD_ITPSOCIALSUBSCRIBE_DANISH</option>
+                    <option value="de_DE">MOD_ITPSOCIALSUBSCRIBE_GERMAN</option>
+                    <option value="el_GR">MOD_ITPSOCIALSUBSCRIBE_GREEK</option>
+                    <option value="en_GB">MOD_ITPSOCIALSUBSCRIBE_ENGLISH_GB</option>
+                    <option value="en_PI">MOD_ITPSOCIALSUBSCRIBE_ENGLISH_PI</option>
+                    <option value="en_UD">MOD_ITPSOCIALSUBSCRIBE_ENGLISH_UD</option>
+                    <option value="en_US">MOD_ITPSOCIALSUBSCRIBE_ENGLISH</option>
+                    <option value="eo_EO">MOD_ITPSOCIALSUBSCRIBE_ESPERANTO</option>
+                    <option value="es_CL">MOD_ITPSOCIALSUBSCRIBE_SPANISH_CL</option>
+                    <option value="es_CO">MOD_ITPSOCIALSUBSCRIBE_SPANISH_CO</option>
+                    <option value="es_ES">MOD_ITPSOCIALSUBSCRIBE_SPANISH_ES</option>
+                    <option value="es_LA">MOD_ITPSOCIALSUBSCRIBE_SPANISH</option>
+                    <option value="es_MX">MOD_ITPSOCIALSUBSCRIBE_SPANISH_MX</option>
+                    <option value="es_VE">MOD_ITPSOCIALSUBSCRIBE_SPANISH_VE</option>
+                    <option value="et_EE">MOD_ITPSOCIALSUBSCRIBE_ESTONIAN</option>
+                    <option value="eu_ES">MOD_ITPSOCIALSUBSCRIBE_BASQUE</option>
+                    <option value="fa_IR">MOD_ITPSOCIALSUBSCRIBE_PERSIAN</option>
+                    <option value="fb_LT">MOD_ITPSOCIALSUBSCRIBE_LEET_SPEAK</option>
+                    <option value="fi_FI">MOD_ITPSOCIALSUBSCRIBE_FINNISH</option>
+                    <option value="fo_FO">MOD_ITPSOCIALSUBSCRIBE_FAROESE</option>
+                    <option value="fr_CA">MOD_ITPSOCIALSUBSCRIBE_FRENCH_CA</option>
+                    <option value="fr_FR">MOD_ITPSOCIALSUBSCRIBE_FRENCH_FR</option>
+                    <option value="ga_IE">MOD_ITPSOCIALSUBSCRIBE_IRISH</option>
+                    <option value="gl_ES">MOD_ITPSOCIALSUBSCRIBE_GALICIAN</option>
+                    <option value="gn_PY">MOD_ITPSOCIALSUBSCRIBE_GUARANI</option>
+                    <option value="gu_IN">MOD_ITPSOCIALSUBSCRIBE_GUJARATI</option>
+                    <option value="he_IL">MOD_ITPSOCIALSUBSCRIBE_HEBREW</option>
+                    <option value="hi_IN">MOD_ITPSOCIALSUBSCRIBE_HINDI</option>
+                    <option value="hr_HR">MOD_ITPSOCIALSUBSCRIBE_CROATIAN</option>
+                    <option value="hu_HU">MOD_ITPSOCIALSUBSCRIBE_HUNGARIAN</option>
+                    <option value="hy_AM">MOD_ITPSOCIALSUBSCRIBE_ARMENIAN</option>
+                    <option value="id_ID">MOD_ITPSOCIALSUBSCRIBE_INDONESIAN</option>
+                    <option value="is_IS">MOD_ITPSOCIALSUBSCRIBE_ICELANDIC</option>
+                    <option value="it_IT">MOD_ITPSOCIALSUBSCRIBE_ITALIAN</option>
+                    <option value="ja_JP">MOD_ITPSOCIALSUBSCRIBE_JAPANESE</option>
+                    <option value="jv_ID">MOD_ITPSOCIALSUBSCRIBE_JAVANESE</option>
+                    <option value="ka_GE">MOD_ITPSOCIALSUBSCRIBE_GEORGIAN</option>
+                    <option value="kk_KZ">MOD_ITPSOCIALSUBSCRIBE_KAZAKH</option>
+                    <option value="km_KH">MOD_ITPSOCIALSUBSCRIBE_KHMER</option>
+                    <option value="kn_IN">MOD_ITPSOCIALSUBSCRIBE_KANNADA</option>
+                    <option value="ko_KR">MOD_ITPSOCIALSUBSCRIBE_KOREAN</option>
+                    <option value="ku_TR">MOD_ITPSOCIALSUBSCRIBE_KURDISH</option>
+                    <option value="la_VA">MOD_ITPSOCIALSUBSCRIBE_LATIN</option>
+                    <option value="li_NL">MOD_ITPSOCIALSUBSCRIBE_LIMBURGISH</option>
+                    <option value="lt_LT">MOD_ITPSOCIALSUBSCRIBE_LITHUANIAN</option>
+                    <option value="lv_LV">MOD_ITPSOCIALSUBSCRIBE_LATVIAN</option>
+                    <option value="mg_MG">MOD_ITPSOCIALSUBSCRIBE_MALAGASY</option>
+                    <option value="mk_MK">MOD_ITPSOCIALSUBSCRIBE_MACEDONIAN</option>
+                    <option value="ml_IN">MOD_ITPSOCIALSUBSCRIBE_MALAYalam</option>
+                    <option value="mn_MN">MOD_ITPSOCIALSUBSCRIBE_MONGOLIAN</option>
+                    <option value="mr_IN">MOD_ITPSOCIALSUBSCRIBE_MARATHI</option>
+                    <option value="ms_MY">MOD_ITPSOCIALSUBSCRIBE_MALAY</option>
+                    <option value="mt_MT">MOD_ITPSOCIALSUBSCRIBE_MALTESE</option>
+                    <option value="nb_NO">MOD_ITPSOCIALSUBSCRIBE_NORWEGIAN_NB</option>
+                    <option value="nn_NO">MOD_ITPSOCIALSUBSCRIBE_NORWEGIAN_NN</option>
+                    <option value="ne_NP">MOD_ITPSOCIALSUBSCRIBE_NEPALI</option>
+                    <option value="nl_BE">MOD_ITPSOCIALSUBSCRIBE_DUTCH_BE</option>
+                    <option value="nl_NL">MOD_ITPSOCIALSUBSCRIBE_DUTCH</option>
+                    <option value="pa_IN">MOD_ITPSOCIALSUBSCRIBE_PUNJABI</option>
+                    <option value="pl_PL">MOD_ITPSOCIALSUBSCRIBE_POLISH</option>
+                    <option value="ps_AF">MOD_ITPSOCIALSUBSCRIBE_PASHTO</option>
+                    <option value="pt_BR">MOD_ITPSOCIALSUBSCRIBE_PORTUGUESE_BR</option>
+                    <option value="pt_PT">MOD_ITPSOCIALSUBSCRIBE_PORTUGUESE_PT</option>
+                    <option value="qu_PE">MOD_ITPSOCIALSUBSCRIBE_QUECHUA</option>
+                    <option value="rm_CH">MOD_ITPSOCIALSUBSCRIBE_ROMANSH</option>
+                    <option value="ro_RO">MOD_ITPSOCIALSUBSCRIBE_ROMANIAN</option>
+                    <option value="ru_RU">MOD_ITPSOCIALSUBSCRIBE_RUSSIAN</option>
+                    <option value="sa_IN">MOD_ITPSOCIALSUBSCRIBE_SANSKRIT</option>
+                    <option value="se_NO">MOD_ITPSOCIALSUBSCRIBE_NORTHERN_SAMI</option>
+                    <option value="sk_SK">MOD_ITPSOCIALSUBSCRIBE_SLOVAK</option>
+                    <option value="sl_SI">MOD_ITPSOCIALSUBSCRIBE_SLOVENIAN</option>
+                    <option value="so_SO">MOD_ITPSOCIALSUBSCRIBE_SOMALI</option>
+                    <option value="sr_RS">MOD_ITPSOCIALSUBSCRIBE_SERBIAN</option>
+                    <option value="sv_SE">MOD_ITPSOCIALSUBSCRIBE_SWEDISH</option>
+                    <option value="sw_KE">MOD_ITPSOCIALSUBSCRIBE_SWAHILI</option>
+                    <option value="sy_SY">MOD_ITPSOCIALSUBSCRIBE_SYRIAC</option>
+                    <option value="ta_IN">MOD_ITPSOCIALSUBSCRIBE_TAMIL</option>
+                    <option value="te_IN">MOD_ITPSOCIALSUBSCRIBE_TELUGU</option>
+                    <option value="tg_TJ">MOD_ITPSOCIALSUBSCRIBE_TAJIK</option>
+                    <option value="th_TH">MOD_ITPSOCIALSUBSCRIBE_THAI</option>
+                    <option value="tl_PH">MOD_ITPSOCIALSUBSCRIBE_FILIPINO</option>
+                    <option value="tl_ST">MOD_ITPSOCIALSUBSCRIBE_KLINGON</option>
+                    <option value="tr_TR">MOD_ITPSOCIALSUBSCRIBE_TURKISH</option>
+                    <option value="tt_RU">MOD_ITPSOCIALSUBSCRIBE_TATAR</option>
+                    <option value="uk_UA">MOD_ITPSOCIALSUBSCRIBE_UKRAINIAN</option>
+                    <option value="ur_PK">MOD_ITPSOCIALSUBSCRIBE_URDU</option>
+                    <option value="uz_UZ">MOD_ITPSOCIALSUBSCRIBE_UZBEK</option>
+                    <option value="vi_VN">MOD_ITPSOCIALSUBSCRIBE_VIETNAMESE</option>
+                    <option value="xh_ZA">MOD_ITPSOCIALSUBSCRIBE_XHOSA</option>
+                    <option value="yi_DE">MOD_ITPSOCIALSUBSCRIBE_YIDDISH</option>
+                    <option value="zu_ZA">MOD_ITPSOCIALSUBSCRIBE_ZULU</option>
+                </field>
+                
+                <field name="spacer2" type="spacer" class="text" label="MOD_ITPSOCIALSUBSCRIBE_TWITTER_SETTINGS" />
+                <field name="twitterButton" type="radio" default="1" label="MOD_ITPSOCIALSUBSCRIBE_TWITTER_BUTTON" description="MOD_ITPSOCIALSUBSCRIBE_TWITTER_BUTTON_DESC" >
+                   <option value="0">JHIDE</option>
+                   <option value="1">JSHOW</option>
+                </field>
+                <field name="twitterName" type="text" default="" size="80" label="MOD_ITPSOCIALSUBSCRIBE_TWITTER_NAME" description="MOD_ITPSOCIALSUBSCRIBE_TWITTER_NAME_DESC" />
+                <field name="twitterSize" type="list" default="large" label="MOD_ITPSOCIALSUBSCRIBE_TWITTER_SIZE" description="MOD_ITPSOCIALSUBSCRIBE_TWITTER_SIZE_DESC" >
+                   <option value="small">MOD_ITPSOCIALSUBSCRIBE_SMALL</option>
+                   <option value="large">MOD_ITPSOCIALSUBSCRIBE_LARGE</option>
+                </field>
+                <field name="twitterCounter" type="list" default="1" label="MOD_ITPSOCIALSUBSCRIBE_TWITTER_COUNTER" description="MOD_ITPSOCIALSUBSCRIBE_TWITTER_COUNTER_DESC" >
+                   <option value="0">JHIDE</option>
+                   <option value="1">JSHOW</option>
+                </field>
+                <field name="twitterLanguage" type="list" default="en" label="MOD_ITPSOCIALSUBSCRIBE_LANGUAGE" description="MOD_ITPSOCIALSUBSCRIBE_LANGUAGE_DESC" >
+                   <option value="ar">MOD_ITPSOCIALSUBSCRIBE_ARABIC</option>
+                   <option value="eu">MOD_ITPSOCIALSUBSCRIBE_BASQUE</option>
+                   <option value="ca">MOD_ITPSOCIALSUBSCRIBE_CATALAN</option>
+                   <option value="zh-cn">MOD_ITPSOCIALSUBSCRIBE_CHINESE_ZH</option>
+                   <option value="zh-tw">MOD_ITPSOCIALSUBSCRIBE_CHINESE_TW</option>
+                   <option value="cs">MOD_ITPSOCIALSUBSCRIBE_CZECH</option>
+                   <option value="da">MOD_ITPSOCIALSUBSCRIBE_DANISH</option>
+                   <option value="nl">MOD_ITPSOCIALSUBSCRIBE_DUTCH</option>
+                   <option value="en">MOD_ITPSOCIALSUBSCRIBE_ENGLISH</option>
+                   <option value="fa">MOD_ITPSOCIALSUBSCRIBE_FARSI</option>
+                   <option value="fil">MOD_ITPSOCIALSUBSCRIBE_FILIPINO</option>
+                   <option value="fr">MOD_ITPSOCIALSUBSCRIBE_FRENCH_FR</option>
+                   <option value="fi">MOD_ITPSOCIALSUBSCRIBE_FINNISH</option>
+                   <option value="de">MOD_ITPSOCIALSUBSCRIBE_GERMAN</option>
+                   <option value="el">MOD_ITPSOCIALSUBSCRIBE_GREEK</option>
+                   <option value="hi">MOD_ITPSOCIALSUBSCRIBE_HINDI</option>
+                   <option value="hu">MOD_ITPSOCIALSUBSCRIBE_HUNGARIAN</option>
+                   <option value="it">MOD_ITPSOCIALSUBSCRIBE_ITALIAN</option>
+                   <option value="id">MOD_ITPSOCIALSUBSCRIBE_INDONESIAN</option>
+                   <option value="uk">MOD_ITPSOCIALSUBSCRIBE_UKRAINIAN</option>
+                   <option value="ur">MOD_ITPSOCIALSUBSCRIBE_URDU</option>
+                   <option value="ko">MOD_ITPSOCIALSUBSCRIBE_KOREAN</option>
+                   <option value="msa">MOD_ITPSOCIALSUBSCRIBE_MALAY</option>
+                   <option value="ru">MOD_ITPSOCIALSUBSCRIBE_RUSSIAN</option>
+                   <option value="es">MOD_ITPSOCIALSUBSCRIBE_SPANISH</option>
+                   <option value="sv">MOD_ITPSOCIALSUBSCRIBE_SWEDISH</option>
+                   <option value="no">MOD_ITPSOCIALSUBSCRIBE_NORWEGIAN</option>
+                   <option value="pl">MOD_ITPSOCIALSUBSCRIBE_POLISH</option>
+                   <option value="pt">MOD_ITPSOCIALSUBSCRIBE_PORTUGUESE</option>
+                   <option value="th">MOD_ITPSOCIALSUBSCRIBE_THAI</option>
+                   <option value="tr">MOD_ITPSOCIALSUBSCRIBE_TURKISH</option>
+                   <option value="jp">MOD_ITPSOCIALSUBSCRIBE_JAPANESE</option>
+                </field>
+                
+
+                <field name="spacer3" type="spacer" class="text" label="MOD_ITPSOCIALSUBSCRIBE_LINKEDIN_SETTINGS" />
+                <field name="linkedInButton" type="radio" default="1" label="MOD_ITPSOCIALSUBSCRIBE_LINKEDIN_BUTTON" description="MOD_ITPSOCIALSUBSCRIBE_LINKEDIN_BUTTON_DESC" >
+                   <option value="0">JHIDE</option>
+                   <option value="1">JSHOW</option>
+                </field>
+                <field name="linkedInAddress" type="text" default="" size="80" label="MOD_ITPSOCIALSUBSCRIBE_LINKEDIN_URL" description="MOD_ITPSOCIALSUBSCRIBE_LINKEDIN_URL_DESC" />
+                <field name="linkedin_small_open_link" type="list" default="_blank" label="MOD_ITPSOCIALSUBSCRIBE_OPEN_LINK" description="MOD_ITPSOCIALSUBSCRIBE_OPEN_LINK_DESC" >
+                   <option value="_blank">MOD_ITPSOCIALSUBSCRIBE_NEW_TAB</option>
+                   <option value="_self">MOD_ITPSOCIALSUBSCRIBE_SELF_TAB</option>
+                </field>
+                
+                <field name="spacer4" type="spacer" class="text" label="MOD_ITPSOCIALSUBSCRIBE_PINTEREST_SETTINGS" />
+                <field name="pinterestButton" type="radio" default="1" label="MOD_ITPSOCIALSUBSCRIBE_PINTEREST_BUTTON" description="MOD_ITPSOCIALSUBSCRIBE_PINTEREST_BUTTON_DESC" >
+                   <option value="0">JHIDE</option>
+                   <option value="1">JSHOW</option>
+                </field>
+                <field name="pinlinkText" type="text" default="We are also here:" size="80" label="MOD_ITPSOCIALSUBSCRIBE_TEXT" description="MOD_ITPSOCIALSUBSCRIBE_WE_TEXT_DESC" />
+                <field name="pinterestAddress" type="text" default="http://pinterest.com/itprism" size="80" label="MOD_ITPSOCIALSUBSCRIBE_PINTEREST_URL" description="MOD_ITPSOCIALSUBSCRIBE_PINTEREST_URL_DESC" />
+                <field name="pinterest_small_open_link" type="list" default="_blank" label="MOD_ITPSOCIALSUBSCRIBE_OPEN_LINK" description="MOD_ITPSOCIALSUBSCRIBE_OPEN_LINK_DESC" >
+                   <option value="_blank">MOD_ITPSOCIALSUBSCRIBE_NEW_TAB</option>
+                   <option value="_self">MOD_ITPSOCIALSUBSCRIBE_SELF_TAB</option>
+                </field>
+                
+                <field name="spacer5" type="spacer" class="text" label="MOD_ITPSOCIALSUBSCRIBE_FOLLOW_ME_PINTEREST_DESC" />
+                <field name="pinterestFollowButton" type="radio" default="1" label="MOD_ITPSOCIALSUBSCRIBE_PINTEREST_BUTTON" description="MOD_ITPSOCIALSUBSCRIBE_PINTEREST_BUTTON_FOLLOW_DESC" >
+                   <option value="0">JHIDE</option>
+                   <option value="1">JSHOW</option>
+                </field>
+                <field name="pinterestFollowAddress" type="text" default="http://pinterest.com/itprism" size="80" label="MOD_ITPSOCIALSUBSCRIBE_PINTEREST_URL" description="MOD_ITPSOCIALSUBSCRIBE_PINTEREST_URL_DESC" />
+                <field name="pinterest_large_open_link" type="list" default="_blank" label="MOD_ITPSOCIALSUBSCRIBE_OPEN_LINK" description="MOD_ITPSOCIALSUBSCRIBE_OPEN_LINK_DESC" >
+                   <option value="_blank">MOD_ITPSOCIALSUBSCRIBE_NEW_TAB</option>
+                   <option value="_self">MOD_ITPSOCIALSUBSCRIBE_SELF_TAB</option>
+                </field>
+                
+                <field name="spacer6" type="spacer" class="text" label="MOD_ITPSOCIALSUBSCRIBE_GOOGLE_SETTINGS" />
+                <field name="badgeWidget" type="radio" default="1" label="MOD_ITPSOCIALSUBSCRIBE_GOOGLE_BADGE" description="MOD_ITPSOCIALSUBSCRIBE_GOOGLE_BADGE_DESC" >
+                   <option value="0">JHIDE</option>
+                   <option value="1">JSHOW</option>
+                </field>
+                <field name="badgeAddress" type="text" default="https://plus.google.com/108186699166458022935" size="80" label="MOD_ITPSOCIALSUBSCRIBE_GOOGLE_PAGE_URL" description="MOD_ITPSOCIALSUBSCRIBE_GOOGLE_PAGE_URL_DESC" />
+                <field name="badgeRenderer" type="list" default="0" label="MOD_ITPSOCIALSUBSCRIBE_GOOGLE_RENDER" description="MOD_ITPSOCIALSUBSCRIBE_GOOGLE_RENDER_DESC" >
+                   <option value="0">HTML5</option>
+                   <option value="1">MOD_ITPSOCIALSUBSCRIBE_STANDARD</option>
+                </field>
+                <field name="badgeType" type="list" default="131" label="MOD_ITPSOCIALSUBSCRIBE_GOOGLE_BADGE_STYLE" description="MOD_ITPSOCIALSUBSCRIBE_GOOGLE_BADGE_STYLE_DESC" >
+                   <option value="69">MOD_ITPSOCIALSUBSCRIBE_SMALL</option>
+                   <option value="131">MOD_ITPSOCIALSUBSCRIBE_STANDARD</option>
+                </field>
+                
+                <field name="badgeTheme" type="list" default="light" label="MOD_ITPSOCIALSUBSCRIBE_GOOGLE_BADGE_THEME" description="MOD_ITPSOCIALSUBSCRIBE_GOOGLE_BADGE_THEME_DESC" >
+                   <option value="light">MOD_ITPSOCIALSUBSCRIBE_LIGHT</option>
+                   <option value="dark">MOD_ITPSOCIALSUBSCRIBE_DARK</option>
+                </field>
+                
+                <field name="badgeWidth" type="text" default="300" size="80" label="MOD_ITPSOCIALSUBSCRIBE_GOOGLE_BADGE_WIDTH" description="MOD_ITPSOCIALSUBSCRIBE_GOOGLE_BADGE_WIDTH_DESC" />
+                
+                <field name="badgeLocale" type="list" default="en" label="MOD_ITPSOCIALSUBSCRIBE_LANGUAGE" description="MOD_ITPSOCIALSUBSCRIBE_LANGUAGE_DESC" >
+                    <option value="ar">MOD_ITPSOCIALSUBSCRIBE_ARABIC</option>
+                    <option value="bn">MOD_ITPSOCIALSUBSCRIBE_BENGALI</option>
+                    <option value="bg">MOD_ITPSOCIALSUBSCRIBE_BULGARIAN</option>
+                    <option value="ca">MOD_ITPSOCIALSUBSCRIBE_CATALAN</option>
+                    <option value="zh">MOD_ITPSOCIALSUBSCRIBE_CHINESE_ZH</option>
+                    <option value="zh_CN">MOD_ITPSOCIALSUBSCRIBE_CHINESE_ZH</option>
+                    <option value="zh_HK">MOD_ITPSOCIALSUBSCRIBE_CHINESE_HK</option>
+                    <option value="zh_TW">MOD_ITPSOCIALSUBSCRIBE_CHINESE_TW</option>
+                    <option value="hr">MOD_ITPSOCIALSUBSCRIBE_CROATIAN</option>
+                    <option value="cs">MOD_ITPSOCIALSUBSCRIBE_CZECH</option>
+                    <option value="da">MOD_ITPSOCIALSUBSCRIBE_DANISH</option>
+                    <option value="nl">MOD_ITPSOCIALSUBSCRIBE_DUTCH</option>
+                    <option value="en">MOD_ITPSOCIALSUBSCRIBE_ENGLISH</option>
+                    <option value="en_IN">MOD_ITPSOCIALSUBSCRIBE_ENGLISH_IN</option>
+                    <option value="en_IE">MOD_ITPSOCIALSUBSCRIBE_ENGLISH_IR</option>
+                    <option value="en_SG">MOD_ITPSOCIALSUBSCRIBE_ENGLISH_SG</option>
+                    <option value="en_ZA">MOD_ITPSOCIALSUBSCRIBE_ENGLISH_SA</option>
+                    <option value="en_GB">MOD_ITPSOCIALSUBSCRIBE_ENGLISH_GB</option>
+                    <option value="fil">MOD_ITPSOCIALSUBSCRIBE_FILIPINO</option>
+                    <option value="fi">MOD_ITPSOCIALSUBSCRIBE_FINNISH</option>
+                    <option value="fr">MOD_ITPSOCIALSUBSCRIBE_FRENCH_FR</option>
+                    <option value="de">MOD_ITPSOCIALSUBSCRIBE_GERMAN</option>
+                    <option value="de_CH">MOD_ITPSOCIALSUBSCRIBE_GERMAN_CH</option>
+                    <option value="el">MOD_ITPSOCIALSUBSCRIBE_GREEK</option>
+                    <option value="gu">MOD_ITPSOCIALSUBSCRIBE_GUJARATI</option>
+                    <option value="iw">MOD_ITPSOCIALSUBSCRIBE_HEBREW</option>
+                    <option value="hi">MOD_ITPSOCIALSUBSCRIBE_HINDI</option>
+                    <option value="hu">MOD_ITPSOCIALSUBSCRIBE_HUNGARIAN</option>
+                    <option value="in">MOD_ITPSOCIALSUBSCRIBE_INDONESIAN</option>
+                    <option value="it">MOD_ITPSOCIALSUBSCRIBE_ITALIAN</option>
+                    <option value="ja">MOD_ITPSOCIALSUBSCRIBE_JAPANESE</option>
+                    <option value="kn">MOD_ITPSOCIALSUBSCRIBE_KANNADA</option>
+                    <option value="ko">MOD_ITPSOCIALSUBSCRIBE_KOREAN</option>
+                    <option value="lv">MOD_ITPSOCIALSUBSCRIBE_LATVIAN</option>
+                    <option value="ln">MOD_ITPSOCIALSUBSCRIBE_LINGALA</option>
+                    <option value="lt">MOD_ITPSOCIALSUBSCRIBE_LITHUANIAN</option>
+                    <option value="ms">MOD_ITPSOCIALSUBSCRIBE_MALAY</option>
+                    <option value="ml">MOD_ITPSOCIALSUBSCRIBE_MALAYalam</option>
+                    <option value="mr">MOD_ITPSOCIALSUBSCRIBE_MARATHI</option>
+                    <option value="no">MOD_ITPSOCIALSUBSCRIBE_NORWEGIAN</option>
+                    <option value="or">MOD_ITPSOCIALSUBSCRIBE_ORIYA</option>
+                    <option value="fa">MOD_ITPSOCIALSUBSCRIBE_PERSIAN</option>
+                    <option value="pl">MOD_ITPSOCIALSUBSCRIBE_POLISH</option>
+                    <option value="pt_BR">MOD_ITPSOCIALSUBSCRIBE_PORTUGUESE_BR</option>
+                    <option value="pt_PT">MOD_ITPSOCIALSUBSCRIBE_PORTUGUESE_PT</option>
+                    <option value="ro">MOD_ITPSOCIALSUBSCRIBE_ROMANIAN</option>
+                    <option value="ru">MOD_ITPSOCIALSUBSCRIBE_RUSSIAN</option>
+                    <option value="sr">MOD_ITPSOCIALSUBSCRIBE_SERBIAN</option>
+                    <option value="sk">MOD_ITPSOCIALSUBSCRIBE_SLOVAK</option>
+                    <option value="sl">MOD_ITPSOCIALSUBSCRIBE_SLOVENIAN</option>
+                    <option value="es">MOD_ITPSOCIALSUBSCRIBE_SPANISH</option>
+                    <option value="sv">MOD_ITPSOCIALSUBSCRIBE_SWEDISH</option>
+                    <option value="gsw">MOD_ITPSOCIALSUBSCRIBE_GERMAN_SW</option>
+                    <option value="ta">MOD_ITPSOCIALSUBSCRIBE_TAMIL</option>
+                    <option value="te">MOD_ITPSOCIALSUBSCRIBE_TELUGU</option>
+                    <option value="th">MOD_ITPSOCIALSUBSCRIBE_THAI</option>
+                    <option value="tr">MOD_ITPSOCIALSUBSCRIBE_TURKISH</option>
+                    <option value="uk">MOD_ITPSOCIALSUBSCRIBE_UKRAINIAN</option>
+                    <option value="vi">MOD_ITPSOCIALSUBSCRIBE_VIETNAMESE</option>
+                </field>
+            </fieldset>
+
+			<fieldset name="subscription_icons_settings" label="MOD_ITPSOCIALSUBSCRIBE_SUBSCRIPTION_ICONS_SETTINGS">
+			     <field name="subscription_icons" type="radio" default="1" label="MOD_ITPSOCIALSUBSCRIBE_DISPLAY_ICONS" description="MOD_ITPSOCIALSUBSCRIBE_DISPLAY_ICONS_DESC" >
+                   <option value="0">JNO</option>
+                   <option value="1">JYES</option>
+                </field>
+                
+                <field name="sicons_separator" type="radio" default="1" label="MOD_ITPSOCIALSUBSCRIBE_DISPLAY_SEPARATOR" description="MOD_ITPSOCIALSUBSCRIBE_DISPLAY_SEPARATOR_DESC" >
+                   <option value="0">JNO</option>
+                   <option value="1">JYES</option>
+                </field>
+                
+                <field name="sicons_open_link" type="list" default="_blank" label="MOD_ITPSOCIALSUBSCRIBE_OPEN_LINKS" description="MOD_ITPSOCIALSUBSCRIBE_OPEN_LINK_DESC" >
+                   <option value="_blank">MOD_ITPSOCIALSUBSCRIBE_NEW_TAB</option>
+                   <option value="_self">MOD_ITPSOCIALSUBSCRIBE_SELF_TAB</option>
+                </field>
+                
+                <field name="spacer7" type="spacer" class="text" label="MOD_ITPSOCIALSUBSCRIBE_LINKEDIN_SPACER" />
+                <field name="sicons_linkedin" type="radio" default="1" label="MOD_ITPSOCIALSUBSCRIBE_LINKEDIN_DISPLAY_ICON" description="MOD_ITPSOCIALSUBSCRIBE_LINKEDIN_DISPLAY_ICON_DESC" >
+                   <option value="0">JNO</option>
+                   <option value="1">JYES</option>
+                </field>
+                <field name="sicons_linkedin_address" type="text" default="" size="80" label="MOD_ITPSOCIALSUBSCRIBE_LINKEDIN_TODAY_URL" description="MOD_ITPSOCIALSUBSCRIBE_LINKEDIN_TODAY_URL_DESC" />
+                
+                <field name="spacer8" type="spacer" class="text" label="MOD_ITPSOCIALSUBSCRIBE_YOUTUBE_SPACER" />
+                <field name="sicons_youtube" type="radio" default="1" label="MOD_ITPSOCIALSUBSCRIBE_YOUTUBE_DISPLAY_ICON" description="MOD_ITPSOCIALSUBSCRIBE_YOUTUBE_DISPLAY_ICON_DESC" >
+                   <option value="0">JNO</option>
+                   <option value="1">JYES</option>
+                </field>
+                <field name="sicons_youtube_address" type="text" default="" size="80" label="MOD_ITPSOCIALSUBSCRIBE_YOUTUBE_URL" description="MOD_ITPSOCIALSUBSCRIBE_YOUTUBE_URL_DESC" />
+                
+                <field name="spacer9" type="spacer" class="text" label="MOD_ITPSOCIALSUBSCRIBE_RSS_SPACER" />
+                <field name="sicons_rss" type="radio" default="1" label="MOD_ITPSOCIALSUBSCRIBE_RSS_DISPLAY_ICON" description="MOD_ITPSOCIALSUBSCRIBE_RSS_DISPLAY_ICON_DESC" >
+                   <option value="0">JNO</option>
+                   <option value="1">JYES</option>
+                </field>
+                <field name="sicons_rss_address" type="text" default="" size="80" label="MOD_ITPSOCIALSUBSCRIBE_RSS_URL" description="MOD_ITPSOCIALSUBSCRIBE_RSS_URL_DESC" />
+                
+                <field name="spacer10" type="spacer" class="text" label="MOD_ITPSOCIALSUBSCRIBE_STUMBLEUPON_SPACER" />
+                <field name="sicons_stumbpleupon" type="radio" default="1" label="MOD_ITPSOCIALSUBSCRIBE_STUMBLEUPON_DISPLAY_ICON" description="MOD_ITPSOCIALSUBSCRIBE_STUMBLEUPON_DISPLAY_ICON_DESC" >
+                   <option value="0">JNO</option>
+                   <option value="1">JYES</option>
+                </field>
+                <field name="sicons_stumbpleupon_address" type="text" default="" size="80" label="MOD_ITPSOCIALSUBSCRIBE_STUMBLEUPON_URL" description="MOD_ITPSOCIALSUBSCRIBE_STUMBLEUPON_URL_DESC" />
+                
+                <field name="spacer11" type="spacer" class="text" label="MOD_ITPSOCIALSUBSCRIBE_ANDROID_SPACER" />
+                <field name="sicons_android" type="radio" default="1" label="MOD_ITPSOCIALSUBSCRIBE_ANDROID_DISPLAY_ICON" description="MOD_ITPSOCIALSUBSCRIBE_ANDROID_DISPLAY_ICON_DESC" >
+                   <option value="0">JNO</option>
+                   <option value="1">JYES</option>
+                </field>
+                <field name="sicons_android_address" type="text" default="" size="80" label="MOD_ITPSOCIALSUBSCRIBE_ANDROID_URL" description="MOD_ITPSOCIALSUBSCRIBE_ANDROID_URL_DESC" />
+                
+                <field name="spacer12" type="spacer" class="text" label="MOD_ITPSOCIALSUBSCRIBE_IPHONE_SPACER" />
+                <field name="sicons_iphone" type="radio" default="1" label="MOD_ITPSOCIALSUBSCRIBE_IPHONE_DISPLAY_ICON" description="MOD_ITPSOCIALSUBSCRIBE_IPHONE_DISPLAY_ICON_DESC" >
+                   <option value="0">JNO</option>
+                   <option value="1">JYES</option>
+                </field>
+                <field name="sicons_iphone_address" type="text" default="" size="80" label="MOD_ITPSOCIALSUBSCRIBE_IPHONE_URL" description="MOD_ITPSOCIALSUBSCRIBE_IPHONE_URL_DESC" />
+                
+                <field name="spacer13" type="spacer" class="text" label="MOD_ITPSOCIALSUBSCRIBE_IPAD_SPACER" />
+                <field name="sicons_ipad" type="radio" default="1" label="MOD_ITPSOCIALSUBSCRIBE_IPAD_DISPLAY_ICON" description="MOD_ITPSOCIALSUBSCRIBE_IPAD_DISPLAY_ICON_DESC" >
+                   <option value="0">JNO</option>
+                   <option value="1">JYES</option>
+                </field>
+                <field name="sicons_ipad_address" type="text" default="" size="80" label="MOD_ITPSOCIALSUBSCRIBE_IPAD_URL" description="MOD_ITPSOCIALSUBSCRIBE_IPAD_URL_DESC" />
+                
+			</fieldset>
+			
+            <fieldset name="additional_code" label="MOD_ITPSOCIALSUBSCRIBE_ADDITIONAL_BUTTONS">
+                <field name="ebuttons1" type="textarea" default="" label="MOD_ITPSOCIALSUBSCRIBE_CUSTOM_BUTTON_CODE" description="MOD_ITPSOCIALSUBSCRIBE_CUSTOM_BUTTON_CODE_DESC" cols="50" rows="10" filter="raw" />
+                <field name="ebuttons2" type="textarea" default="" label="MOD_ITPSOCIALSUBSCRIBE_CUSTOM_BUTTON_CODE" description="MOD_ITPSOCIALSUBSCRIBE_CUSTOM_BUTTON_CODE_DESC" cols="50" rows="10" filter="raw" />
+                <field name="ebuttons3" type="textarea" default="" label="MOD_ITPSOCIALSUBSCRIBE_CUSTOM_BUTTON_CODE" description="MOD_ITPSOCIALSUBSCRIBE_CUSTOM_BUTTON_CODE_DESC" cols="50" rows="10" filter="raw" />
+                <field name="ebuttons4" type="textarea" default="" label="MOD_ITPSOCIALSUBSCRIBE_CUSTOM_BUTTON_CODE" description="MOD_ITPSOCIALSUBSCRIBE_CUSTOM_BUTTON_CODE_DESC" cols="50" rows="10" filter="raw" />
+                <field name="ebuttons5" type="textarea" default="" label="MOD_ITPSOCIALSUBSCRIBE_CUSTOM_BUTTON_CODE" description="MOD_ITPSOCIALSUBSCRIBE_CUSTOM_BUTTON_CODE_DESC" cols="50" rows="10" filter="raw" />
+            </fieldset>
+             
+             <fieldset name="implementation_settings" label="MOD_ITPSOCIALSUBSCRIBE_IMPLEMENTATION_OPTIONS">
+                <field name="spacer14" type="spacer" class="text" label="MOD_ITPSOCIALSUBSCRIBE_FACEBOOK_ADVANCED_SETTINGS" />
+                <field name="facebookLikeAppId" type="text" default="" label="MOD_ITPSOCIALSUBSCRIBE_FACEBOOK_APP_ID" description="MOD_ITPSOCIALSUBSCRIBE_FACEBOOK_APP_ID_DESC" />
+                <field name="facebookLikeSend" type="list" default="0" label="MOD_ITPSOCIALSUBSCRIBE_FACEBOOK_SEND_BUTTON" description="MOD_ITPSOCIALSUBSCRIBE_FACEBOOK_SEND_BUTTON" >
+                   <option value="0">JNO</option>
+                   <option value="1">JYES</option>
+                </field>
+                <field name="facebookRootDiv" type="radio" default="1" label="MOD_ITPSOCIALSUBSCRIBE_FACEBOOK_ROOT" description="MOD_ITPSOCIALSUBSCRIBE_FACEBOOK_ROOT_DESC" >
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                 </field>
+                <field name="facebookLoadJsLib" type="radio" default="1" label="MOD_ITPSOCIALSUBSCRIBE_LOAD_JS_LIB" description="MOD_ITPSOCIALSUBSCRIBE_LOAD_JS_LIB_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                
+                <field name="spacer15" type="spacer" class="text" label="MOD_ITPSOCIALSUBSCRIBE_TWITTER_ADVANCED_SETTINGS" />
+                <field name="load_twitter_library" type="radio" default="1" label="MOD_ITPSOCIALSUBSCRIBE_TWITTER_LOAD_LIBRARY" description="MOD_ITPSOCIALSUBSCRIBE_TWITTER_LOAD_LIBRARY_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="spacer16" type="spacer" class="text" label="MOD_ITPSOCIALSUBSCRIBE_GOOGLE_ADVANCED_SETTINGS" />
+                <field name="loadGoogleJsLib" type="radio" default="1" label="MOD_ITPSOCIALSUBSCRIBE_GOOGLE_LOAD_JS" description="MOD_ITPSOCIALSUBSCRIBE_GOOGLE_LOAD_JS_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                
+                <field name="spacer17" type="spacer" class="text" label="MOD_ITPSOCIALSUBSCRIBE_ADVANCED_SETTINGS" />
+                <field name="loadCss" type="radio" default="1" label="MOD_ITPSOCIALSUBSCRIBE_LOAD_STYLE_CSS" description="MOD_ITPSOCIALSUBSCRIBE_LOAD_STYLE_CSS_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="dynamicLocale" type="radio" default="1" label="MOD_ITPSOCIALSUBSCRIBE_AUTO_LANGUAGE" description="MOD_ITPSOCIALSUBSCRIBE_AUTO_LANGUAGE_DESC">
+                     <option value="0">JNO</option>
+                     <option value="1">JYES</option>
+                </field>
+            </fieldset>
+            
+            <fieldset name="advanced">
+                <field name="moduleclass_sfx" type="text"
+                    label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+                    description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+                <field
+                    name="cache"
+                    type="list"
+                    default="1"
+                    label="COM_MODULES_FIELD_CACHING_LABEL"
+                    description="COM_MODULES_FIELD_CACHING_DESC">
+                    <option
+                        value="1">JGLOBAL_USE_GLOBAL</option>
+                    <option
+                        value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+                </field>
+                <field
+                    name="cache_time"
+                    type="text"
+                    default="900"
+                    label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+                    description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+                <field
+                    name="cachemode"
+                    type="hidden"
+                    default="static">
+                    <option
+                        value="static"></option>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+</extension>

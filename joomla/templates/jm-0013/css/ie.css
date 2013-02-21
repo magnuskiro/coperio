@@ -1,0 +1,12 @@
+/*--------------------------------------------------------------
+# Copyright (C) joomla-monster.com
+# License: http://www.joomla-monster.com/license.html Joomla-Monster Proprietary Use License
+# Website: http://www.joomla-monster.com
+# Support: info@joomla-monster.com
+---------------------------------------------------------------*/
+
+/*********** IE7 RTL STYLES **********/
+
+#search div.search .inputbox {
+	line-height: 17px;
+}

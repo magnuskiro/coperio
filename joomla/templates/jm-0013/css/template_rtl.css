@@ -1,0 +1,331 @@
+/*--------------------------------------------------------------
+# Copyright (C) joomla-monster.com
+# License: http://www.joomla-monster.com/license.html Joomla-Monster Proprietary Use License
+# Website: http://www.joomla-monster.com
+# Support: info@joomla-monster.com
+---------------------------------------------------------------*/
+
+/*********** RTL SCHEME **********/
+
+#all {
+    text-align: right;
+}
+
+#logo {
+    float: right;
+    padding: 0 7px 0 0;
+}
+
+#icons {
+    float: right;
+    padding-left: 0;
+	padding-right: 20px;
+}
+
+#widtharea {
+    padding: 0 0 0 15px;
+}
+
+#widtharea, #stylearea {
+    float: right;
+}
+
+#topmenu {
+    float: left;
+}
+
+#pathway {
+    float: right;
+}
+
+#pathway span,
+#pathway a.pathway {
+	display: inline-block;
+}
+
+#pathway div.breadcrumbs span.showHere {
+	margin: 0 0 0 5px;
+}
+
+#fonts {
+    float: left;
+    text-align: left;
+}
+
+#fonts a {
+    float: left;
+}
+
+#logo_sitedesc {
+    float: right;
+    padding: 0 7px 0 0;
+}
+
+#search {
+    float: left;
+}
+
+#search div.search label {
+	float: right;
+}
+
+#search div.search .button {
+    margin: 0 5px 0 0;
+	float: right;
+}
+
+#search div.search .inputbox {
+    padding: 2px 4px 2px 0;
+	float: right;
+}
+
+#user1, #user2 {
+    float: right;
+}
+
+#left {
+    float: right;
+}
+
+#wrapper.scheme_3 #content {
+    float: right;
+}
+
+#wrapper.scheme_2 #content {
+    float: right;
+}
+
+#wrapper.scheme_1 #content {
+    float: right;
+}
+
+#xhtml_css {
+    float: right;
+}
+
+div.arrow h3 {
+    background: url(../images/default/arrow_bgR.gif) right no-repeat !important;
+    margin: 0 10px 0 0;
+}
+
+div.djmodule h3 {
+    padding: 0 10px 0 0;
+}
+
+#modules-bottom.m4 div.modules-bottom-in {
+    float: right;
+    width: 24.6%;
+}
+
+#modules-bottom.m3 div.modules-bottom-in {
+    float: right;
+    width: 33%;
+}
+
+#modules-bottom.m2 div.modules-bottom-in {
+    float: right;
+    width: 50%;
+}
+
+#modules-bottom.m1 div.modules-bottom-in {
+    float: right;
+    width: 100%;
+}
+
+#xhtmlCss {
+    float: right;
+}
+
+#rss {
+    float: left;
+	text-align: left;
+}
+
+/* topmenu */
+
+#topmenu ul {
+	float: left;
+}
+
+#topmenu ul li {
+	border-left: none;
+	border-right: 1px solid #FFFFFF;
+	float: right;
+}
+
+#topmenu ul li a,
+#topmenu ul li a:link,
+#topmenu ul li a:visited {
+	float: none;
+}
+
+#topmenu li:hover ul {
+	right: auto;
+	left: 0;
+}
+
+#topmenu li:hover li:hover ul,
+#topmenu li:hover li:hover li:hover ul, 
+#topmenu li:hover li:hover li:hover li:hover ul {
+	right: auto;
+	left: 226px;
+}
+
+#topmenu li:hover ul li { 
+	float: right; 
+}
+
+#topmenu li:hover ul li a:link, 
+#topmenu li:hover ul li a:visited {
+	border-right: 1px solid #fff;
+	border-left: none;
+	text-align: right;
+}
+
+#topmenu li:hover ul li a:link, 
+#topmenu li:hover ul li a:visited {
+    text-align: right;
+}
+
+#topmenu ul, 
+#topmenu li:hover ul ul, 
+#topmenu li:hover li:hover ul ul, 
+#topmenu li:hover li:hover li:hover ul ul, 
+#topmenu li:hover li:hover li:hover li:hover ul ul {
+    right: 0px;
+}
+
+/* default menu */
+
+ul.menu li ul li {
+    padding: 0 20px 0 0;
+}
+
+ul.menu li, ul#mainlevel li {
+    padding: 0 10px 0 0;
+}
+
+ul.menu li a:link, ul.menu li a:visited, ul#mainlevel li a {
+    padding: 4px 10px 4px 0;
+    background: url(../images/default/bg_alinkR.png) right no-repeat !important;
+}
+
+ul.menu li ul li a:link, 
+ul.menu li ul li a:visited, 
+ul.menu li ul li.active a, 
+ul.menu li ul li.active li a, 
+ul.menu li ul li.active li li a,
+ul.menu li ul li.active li li li a,
+ul.menu li ul li.active li li li li a {
+    padding: 4px 10px 4px 0;
+    text-align: right;
+}
+
+/* reset */
+
+ul {
+    padding: 0 10px 0 0;
+}
+
+ol {
+    padding: 0 20px 0 0;
+}
+
+/* global styles */
+
+div.registration form#member-registration fieldset dt, 
+div.profile form#member-profile fieldset dt,
+div.profile fieldset#users-profile-core dt,
+div.profile fieldset#users-profile-custom dt,
+div.profile-edit form#member-profile fieldset dt, 
+div.remind fieldset dt, 
+div.reset fieldset dt {
+    float: right;
+}
+
+input.button, button.validate, button {
+ 	margin: 0 5px 0 0;
+}
+
+.inputbox, input.validate-password, input.validate-username, input.required, select, textarea {
+	padding: 2px 2px 2px 0;
+}
+
+input#modlgn-remember {
+    margin: 0 0 0 10px;
+}
+
+ul.pagenav li.pagenav-prev {
+    float: right;
+}
+
+ul.pagenav li.pagenav-next {
+    float: left;
+}
+
+.cols-2 .column-1 {
+    float: right;
+}
+
+.cols-2 .column-2 {
+    float: left;
+}
+
+.cols-3 .column-1, 
+.cols-3 .column-2, 
+.cols-3 .column-3 {
+    float: right;
+}
+
+.cols-4 .column-1, 
+.cols-4 .column-2, 
+.cols-4 .column-3, 
+.cols-4 .column-4 {
+    float: right;
+}
+
+.cols-4 .column-2 {
+	padding: 0 2% 0 1%;
+}
+
+.cols-4 .column-3 {
+	padding: 0 1% 0 2%;
+}
+
+ul.actions {
+    text-align: left;
+}
+
+div.pagination li {
+	display: inline-block;
+}
+
+.category-name a:link,
+.category-name a:visited {
+	display: inline-block;
+}
+
+p.readmore a:link, p.readmore a:visited {
+    padding: 0 15px 0 0;
+    float: left;
+    background: url(../images/default/bg_readonR.gif) right no-repeat;
+}
+
+/************************ Presentation Style: pages ******************/
+
+div#article-index {
+    float: left;
+    margin: 0 10px 0 0;
+}
+
+div.pagenavcounter {
+    float: left;
+    margin: 0 10px 10px 0;
+}
+
+/************************ Presentation Style: tabs ******************/
+
+.tabs dt.tabs {
+	float: right;
+	margin: 0 0 -1px 5px;
+}

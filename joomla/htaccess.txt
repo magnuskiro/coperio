@@ -74,3 +74,6 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule .* index.php [L]
 #
 ## End - Joomla! core SEF Section.
+
+php_value upload_tmp_dir "/home/matsbr/www.coperio.no/html/joomla/tmp/"
+SetEnv PHPRC /home/matsbr/www.coperio.no/html/joomla

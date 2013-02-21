@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset addfieldpath="/administrator/components/com_jinc/models/fields">
+        <field name="id" type="JINCNewsletter" label="COM_JINC_NEWSLETTER"
+            description="COM_JINC_NEWSLETTER_DESC" class="inputbox"
+            required="true" onchange="this.form.submit();" />
+    </fieldset>
+</form>

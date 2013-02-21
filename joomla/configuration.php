@@ -13,6 +13,9 @@ class JConfig {
 	public $debug_lang = '0';
 	public $dbtype = 'mysqli';
 	public $host = 'localhost';
+#	public $user = 'matsbr';
+#	public $password = 'jcd7h2hJ';
+#	public $db = 'matsbr';
 	public $user = 'root';
 	public $password = 'Programmering';
 	public $db = 'joomla';
@@ -24,9 +27,10 @@ class JConfig {
 	public $helpurl = 'http://help.joomla.org/proxy/index.php?option=com_help&keyref=Help{major}{minor}:{keyref}';
 	public $ftp_host = '127.0.0.1';
 	public $ftp_port = '21';
-	public $ftp_user = '';
-	public $ftp_pass = '';
-	public $ftp_root = '';
+	public $ftp_user = 'matsbr';
+	public $ftp_pass = 'jcd7h2hJ';
+#	public $ftp_root = '/home/matsbr/www.coperio.no/html/joomla/tmp';
+	public $ftp_root = '/home/kiro/coperio/joomla/tmp';
 	public $ftp_enable = '0';
 	public $offset = 'UTC';
 	public $mailer = 'mail';
@@ -45,7 +49,7 @@ class JConfig {
 	public $MetaDesc = '';
 	public $MetaKeys = '';
 	public $MetaTitle = '1';
-	public $MetaAuthor = '1';
+	public $MetaAuthor = '0';
 	public $MetaVersion = '0';
 	public $robots = '';
 	public $sef = '1';
@@ -53,8 +57,16 @@ class JConfig {
 	public $sef_suffix = '0';
 	public $unicodeslugs = '0';
 	public $feed_limit = '10';
+#	public $log_path = '/home/matsbr/www.coperio.no/html/joomla/logs';
 	public $log_path = '/home/kiro/coperio/joomla/logs';
+#	public $tmp_path = '/home/matsbr/www.coperio.no/html/joomla/tmp/';
 	public $tmp_path = '/home/kiro/coperio/joomla/tmp';
 	public $lifetime = '15';
 	public $session_handler = 'database';
+	public $MetaRights = '';
+	public $sitename_pagetitles = '0';
+	public $force_ssl = '0';
+	public $feed_email = 'author';
+	public $cookie_domain = '';
+	public $cookie_path = '';
 }
