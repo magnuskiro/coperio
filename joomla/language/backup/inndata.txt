@@ -1,0 +1,135 @@
+----- Ny fil: en-GB/en-GB.com_jinc.ini-----
+Detaljer
+Din e-post
+Ditt navn
+Captcha kode
+Last Captcha kode
+Abonner
+Avslutt abonnement
+Vedlegg
+Subject
+Dispatch Dato
+
+Nytt abonnement for% s
+Hei% s, har \ n \ nDet nytt abonnement på nyhetsbrev% er blitt registrert \ nDenne e-posten inneholder hans detaljer:. \ N \ nname:% s \ n \ nVennligst ikke svare på denne meldingen. Det er automatisk generert, og er kun ment som informasjon.
+
+Din e-postadresse er riktig bekreftet. Nå er du abonnerer på vårt nyhetsbrev
+Forhåndsvisning av melding sendt til% s
+Gratulerer! Du er nå påmeldt på vårt nyhetsbrev!
+Abonnementet forespørsel er registrert. Du skal motta en e-postmelding med en kobling du må klikke for å bekrefte utmelding.
+Du er avsluttet abonnementet på vårt nyhetsbrev.
+Abonnementet er bekreftet. Nå trenger du ikke abonnerer på dette nyhetsbrevet lenger
+Eksempeldata riktig lastet
+Forespørselen om abonnement er registrert. Du skal motta en tekstmelding som inneholder en lenke du må klikke for å bekrefte e-postadressen.
+
+Feil ved sending av forhåndsvisning
+Ingen melding valgt
+Operasjon ikke tillatt
+Feil ved lasting CSV-fil
+Nyhetsbrev ikke publisert eller ikke tilgjengelig
+Brukeren har ikke tillatelse til å abonnere dette nyhetsbrevet
+Feil ved henting av abonnent listen
+Ikke nok info til å tegne dette nyhetsbrevet
+Feil i abonnement
+Feil ved sending av melding
+Du er ikke autorisert til å tegne dette nyhetsbrevet
+Post adressen er ikke gyldig
+Feil under utmelding
+Feil ved lasting CSV-fil
+Allerede abonnerer på dette nyhetsbrevet
+Feilkontroll captcha. Last den og prøv igjen
+Feil ved sending velkomstmelding. Ingen e-post adresse funnet
+Sett ditt navn
+Sett inn en gyldig e-postadresse
+Feil ved lasting av nyhetsbrevet. Nyhetsbrev ikke avslutter eller ikke publisert
+Feil under utmelding.
+Feil bekrefter du abonnement. Sjekk din e-postadresse og bekreftelse streng og prøv
+Feil ved henting av brukerinfo
+Feil under utmelding
+Feil ved innlasting av eksempeldata
+Feil ved lasting melding
+Meldingen ikke lastet
+Navnet er en obligatorisk verdi å abonnere
+Feil ved oppdatering av prosessen informasjon
+Feil stoppe meldingen. Kanskje prosessen er i ferdig status
+Feil ved lasting av prosessen
+Prosessen er allerede i gang
+Feil ved oppretting av attributt. Umulig å skape attributt tabell eller attributt finnes allerede
+Attributtnavn er et obligatorisk felt
+Minst én nyhetsbrev refererer fortsatt dette attributtet
+Feil slett attributt
+Feil innsetting attributter verdi
+Noen obligatorisk attributtverdi er savnet
+
+Feil ved lasting varsel
+Innkallingen aksept er obligatorisk
+Du må godta innkallingen
+Abonnement resultat
+Ingen nyhetsbrev valgt
+
+Feil ved sending av melding
+Feil innstilling rapportdata
+Sorry! Abonnement er midlertidig suspendert for dette nyhetsbrevet
+Sorry! Utmelding er midlertidig suspendert for dette nyhetsbrevet
+Denne posten er ikke abonnerer på denne nyhetsbrev
+Ny utmelding for% s
+Hei% s, har \ n \ nA ny Abonnementet på nyhetsbrev% er blitt bekreftet. \ N \ nVennligst ikke svare på denne meldingen. Det er automatisk generert, og er kun ment som informasjon.
+Ble sendt
+% S er obligatorisk
+Vennligst sett et tall som% s
+Sett inn en dato som% s
+----- Ny fil: en-GB/en-GB.mod_jinc_multisubscription.ini-----
+Nytt abonnement for% s
+Hei% s, har \ n \ nA ny multi abonnement på nyhetsbrev% er blitt registrert \ nDenne e-posten inneholder hans detaljer:. \ N \ nname:% s \ n \ nVennligst ikke svare på denne meldingen. Det er automatisk generert, og er kun ment som informasjon.
+JINC Nyhetsbrev Multi Registrering
+Nyhetsbrev
+Nyhetsbrev utvalg
+- Velg Nyhetsbrev -
+Input stil
+Inngang stil for modul.
+Standard
+Minimal
+Pre-tekst
+Dette er teksten eller HTML som vises over modulform
+Post-tekst
+Dette er teksten eller HTML som vises etter modulform
+Ny utmelding for% s
+Hei% s, har \ n \ nA ny Abonnementet på nyhetsbrev% er blitt bekreftet. \ N \ nVennligst ikke svare på denne meldingen. Det er automatisk generert, og er kun ment som informasjon.
+----- Ny fil: en-GB/en-GB.mod_jinc_subscription.ini-----
+Nytt abonnement for% s
+Hei% s, har \ n \ nDet nytt abonnement på nyhetsbrev% er blitt registrert \ nDenne e-posten inneholder hans detaljer:. \ N \ nname:% s \ n \ nVennligst ikke svare på denne meldingen. Det er automatisk generert, og er kun ment som informasjon.
+JINC Nyhetsbrev Abonnement
+Nyhetsbrev
+Nyhetsbrev utvalg
+- Velg Nyhetsbrev -
+Input stil
+Inngang stil for modul. Du kan arve innspill stilen fra nyhetsbrevet eller velge en bestemt en.
+Standard
+Minimal
+Arvet
+Pre-tekst
+Dette er teksten eller HTML som vises over modulform
+Post-tekst
+Dette er teksten eller HTML som vises etter modulform
+Ny utmelding for% s
+Hei% s, har \ n \ nA ny Abonnementet på nyhetsbrev% er blitt bekreftet. \ N \ nVennligst ikke svare på denne meldingen. Det er automatisk generert, og er kun ment som informasjon.
+Omdirigering link etter abonnement
+Dette er en link vil brukeren bli omdirigert etter tegning
+----- Ny fil: en-GB/en-GB.mod_jinc_unsubscription.ini-----
+Nytt abonnement for% s
+Hei% s, har \ n \ nDet nytt abonnement på nyhetsbrev% er blitt registrert \ nDenne e-posten inneholder hans detaljer:. \ N \ nname:% s \ n \ nVennligst ikke svare på denne meldingen. Det er automatisk generert, og er kun ment som informasjon.
+JINC Nyhetsbrev Abonnement
+Nyhetsbrev
+Nyhetsbrev utvalg
+- Velg Nyhetsbrev -
+Input stil
+Inngang stil for modul. Du kan arve innspill stilen fra nyhetsbrevet eller velge en bestemt en.
+Standard
+Minimal
+Arvet
+Pre-tekst
+Dette er teksten eller HTML som vises over modulform
+Post-tekst
+Dette er teksten eller HTML som vises etter modulform
+Ny utmelding for% s
+Hei% s, har \ n \ nA ny Abonnementet på nyhetsbrev% er blitt bekreftet. \ N \ nVennligst ikke svare på denne meldingen. Det er automatisk generert, og er kun ment som informasjon.
