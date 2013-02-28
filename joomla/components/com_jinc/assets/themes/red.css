@@ -1,10 +1,10 @@
 .jinc_error {
     border-bottom-style: solid;
     border-bottom-color: #6699cc;
-    border-bottom-width: 2px;
+    border-bottom-width: 0px;
     border-top-style: solid;
     border-top-color: #6699cc;
-    border-top-width: 2px;
+    border-top-width: 0px;
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 5px;
@@ -16,10 +16,10 @@
 .jinc_caption {
     border-bottom-style: solid;
     border-bottom-color: #6699cc;
-    border-bottom-width: 2px;
+    border-bottom-width: 0px;
     border-top-style: solid;
     border-top-color: #6699cc;
-    border-top-width: 2px;
+    border-top-width: 0px;
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 5px;
@@ -97,8 +97,8 @@
 
 .jinc_msgattachment {
     background: #FFF repeat-x scroll center left;
-    border-bottom: 1px solid #FF0000;
-    border-top: 1px solid #FF0000;
+    border-bottom: 0px solid #FF0000;
+    border-top: 0px solid #FF0000;
     font: normal normal 10px Verdana, Geneva, Arial, Helvetica, sans-serif;
     padding: 5px;
     margin-bottom: 10px;
@@ -134,7 +134,7 @@
     color:rgb(101,101,101);
     font: bold 100% 'trebuchet ms',helvetica,sans-serif;
     background-color: #FFD2C6;
-    border:1px solid;
+    border:0px solid;
     border-color: rgb(101,101,101) rgb(101,101,101) rgb(101,101,101) rgb(101,101,101);
     padding: 1px 12px 1px 12px;
 }
@@ -146,7 +146,7 @@
     color:rgb(101,101,101);
     font: bold 100% 'trebuchet ms',helvetica,sans-serif;
     background-color: #FFD2C6;
-    border:1px solid;
+    border:0px solid;
     border-color: rgb(101,101,101) rgb(101,101,101) rgb(101,101,101) rgb(101,101,101);
     padding: 1px 12px 1px 12px;
 }
@@ -169,14 +169,14 @@
 }
 
 .jinc_msg_title, .jinc_err_msg_title {
-    border-top-width: 2px;
+    border-top-width: 0px;
     border-top-style: solid;
     border-top-color: #6699cc;
-    border-top-width: 2px;
-    border-bottom-width: 2px;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
     border-bottom-style: solid;
     border-bottom-color: #6699cc;
-    border-bottom-width: 2px;    
+    border-bottom-width: 0px;    
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 5px;
@@ -189,10 +189,10 @@
 .jinc_msg_subtitle, .jinc_err_msg_subtitle {
     border-top-style: solid;
     border-top-color: #6699cc;
-    border-top-width: 1px;
+    border-top-width: 0px;
     border-bottom-style: dotted;
     border-bottom-color: #6699cc;
-    border-bottom-width: 1px;
+    border-bottom-width: 0px;
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 5px;
@@ -204,10 +204,10 @@
 .jinc_msg_text, .jinc_err_msg_text {
     border-top-style: solid;
     border-top-color: #6699cc;
-    border-top-width: 1px;    
+    border-top-width: 0px;    
     border-bottom-style: solid;
     border-bottom-color: #6699cc;
-    border-bottom-width: 1px;
+    border-bottom-width: 0px;
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 5px;

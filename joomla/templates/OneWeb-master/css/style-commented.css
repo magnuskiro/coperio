@@ -1161,12 +1161,14 @@ aside#rightbar ul{
 }
 #rightbar .menu li {
     margin-top: 1em; 
-    font-size: 1.2em; 
+    font-size: 0.9em;
+	font-weight:normal;
 }
 #rightbar ul, ol {
-  margin: 0 0 1em 0;
-  text-align: center; 
-  padding: 0 0 0 0;
+	text-decoration: none; 
+	margin: 0 0 1em 0;
+	text-align: center; 
+	padding: 0 0 0 0;
 }
 /* Coperio addition END*/
 #left .itp-socialbuttons-mod {
