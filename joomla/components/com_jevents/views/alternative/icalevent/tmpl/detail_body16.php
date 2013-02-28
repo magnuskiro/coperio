@@ -152,6 +152,9 @@ if( array_key_exists('row',$this->data) ){
 				?>
             </table>
             <!--  </div>  -->
+			<!-- Coperio addition -->
+			<?php include("enrollmentAddition/enrollment.php");  ?>
+			<!-- END Coperio addition -->
             <?php
 		} // end if not loaded from template
             $results = $dispatcher->trigger( 'onAfterDisplayContent', array( &$row, &$params, $page ) );
