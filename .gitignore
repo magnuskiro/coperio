@@ -1,4 +1,3 @@
-.gitignore
 .htaccess
 joomla/administrator/cache/*
 joomla/administrator/components/com_admin/*
@@ -11,6 +10,7 @@ joomla/administrator/components/com_contact/*
 joomla/administrator/components/com_content/*
 joomla/administrator/components/com_cpanel/*
 joomla/administrator/components/com_installer/*
+joomla/administrator/components/com_jce/*
 joomla/administrator/components/com_languages/*
 joomla/administrator/components/com_login/*
 joomla/administrator/components/com_media/*
@@ -213,6 +213,7 @@ joomla/cache/*
 joomla/components/com_banners/*
 joomla/components/com_contact/*
 joomla/components/com_content/*
+joomla/components/com_jce/*
 joomla/components/com_mailto/*
 joomla/components/com_media/*
 joomla/components/com_newsfeeds/*
@@ -396,4 +397,3 @@ joomla/joomla.xml
 joomla/*.txt
 passwords
 configuration.php
-
