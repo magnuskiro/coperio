@@ -1027,9 +1027,14 @@ article {
     width: 48%; 
     height: 400px;
     float: left; 
-    background-color: #f9f9f9;
+/*    background-color: #f9f9f9;*/
+	background-color:#FFF;
     text-align: center; 
     margin-right: 1%;
+	border: 2px solid;
+	border-color: #eee;
+	border-radius: 0px;
+	
 }
 .blog .article address, p{
     margin-top: 1em; 
