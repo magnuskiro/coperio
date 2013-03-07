@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension version="2.5" type="plugin" group="quickicon">
+<extension version="2.5" type="plugin" group="quickicon" method="upgrade">
 	<name>plg_quickicon_jcefilebrowser</name>
 	<author>Ryan Demmer</author>
-	<creationDate>April 2012</creationDate>
-	<copyright>Copyright (C) 2012 Ryan Demmer. All rights reserved.</copyright>
-	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
-	<authorEmail>admin@joomla.org</authorEmail>
-	<authorUrl>www.joomla.org</authorUrl>
-	<version>2.5.0</version>
+	<creationDate>05 March 2013</creationDate>
+	<copyright>Copyright (C) 2006 - 2013 Ryan Demmer. All rights reserved</copyright>
+	<license>GNU/GPL Version 2 or later - http://www.gnu.org/licenses/gpl-2.0.html</license>
+	<authorEmail>@@email@@</authorEmail>
+	<authorUrl>www.joomalcontenteditor.net</authorUrl>
+	<version>2.3.2.1</version>
 	<description>PLG_QUICKICON_JCEFILEBROWSER_XML_DESCRIPTION</description>
 	<files>
 		<filename plugin="jcefilebrowser">jcefilebrowser.php</filename>
