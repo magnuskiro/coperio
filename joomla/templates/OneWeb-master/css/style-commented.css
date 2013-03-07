@@ -1153,7 +1153,7 @@ aside#rightbar article{
 	border:2px solid;
 	border-color: #eee;
     border-radius:0px;
-    background-color: #EEE;
+   /* background-color: #EEE;*/
     
     /*box-shadow: 10px 10px 5px #888888; */
 }
@@ -1179,6 +1179,16 @@ aside#rightbar ul{
 	margin: 0 0 1em 0;
 	text-align: center; 
 	padding: 0 0 0 0;
+}
+
+#rightbar form{
+	text-align:center;
+}
+#rightbar input.inputbox{
+	width:auto; 
+}
+#rightbar button{
+	margin-left: 1%; 
 }
 /* Coperio addition END*/
 #left .itp-socialbuttons-mod {
