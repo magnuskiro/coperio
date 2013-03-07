@@ -45,13 +45,14 @@ include_once JPATH_THEMES . '/' . $this->template . '/logic.php';
 <div id="logoRow" class="row clearfix">
 	<a href="<?php echo $this->baseurl ?>/" title="<?php echo htmlspecialchars($app->getCfg('sitename'));?>">        		
 <!-- 
-Sitename out commented its the part in the top left. Changed to logo. 
-        <header id="logo"><?php #echo htmlspecialchars($app->getCfg('sitename'));?></header>
--->
+Sitename out commented its the part in the top left. Changed to logo. -->
         <header id="logo">
             <img src="images/logo/coperio_logo.png">
         </header>
     </a>                     	
+    <span id="slogan" >
+    	<?php echo htmlspecialchars($app->getCfg('sitename'));?>
+    </span>
 </div>
 <div id="container">
 	<?php if($this->countModules('banner')) : ?>

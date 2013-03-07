@@ -686,6 +686,10 @@ input[type="submit"]:active{
 #logo img{
     width: 20%;
 }
+#slogan{
+	color: #6699cc;
+	font-size: 1.3em;
+}
 /* 11 NAVIGATION			============================================================================= */
 #buttonRow {float:right;}
 #mobileMenu,
