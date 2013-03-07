@@ -689,6 +689,7 @@ input[type="submit"]:active{
 #slogan{
 	color: #6699cc;
 	font-size: 1.3em;
+	font-style: italic;
 }
 /* 11 NAVIGATION			============================================================================= */
 #buttonRow {float:right;}
