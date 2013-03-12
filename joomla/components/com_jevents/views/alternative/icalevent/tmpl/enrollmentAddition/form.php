@@ -37,7 +37,7 @@
                		<span>Tidspunkt(TODO):</span> 
 				</li>
 				<li>
-					<input name="time" type="text" placeholder="Ønsket tidspunkt"/>
+					<input name="time" type="datetime" placeholder="Ønsket tidspunkt" value="<?PHP JEventsHTML::getDateFormat( $row->yup(), $row->mup(), $row->dup(), 1 ) ?>"/>
 				</li>
            	</div>
 		
@@ -46,16 +46,16 @@
                		<span>Telefon:</span> 
 				</li>
 				<li>
-					<input name="phone" type="text" placeholder="Kontakt telefonnummer"/>
+					<input name="phone" type="number" placeholder="Kontakt telefonnummer"/>
 				</li>
            	</div>
 		
 			<div class="formcontent">
 				<li>
-               		<span>Epost:</span> 
+               		<span>E-post:</span> 
 				</li>
 				<li>
-					<input name="email" type="text" placeholder="Kontakt E-postadresse"/>
+					<input name="email" type="email" placeholder="Kontakt E-postadresse"/>
 				</li>
            	</div>
 		
@@ -64,7 +64,7 @@
                		<span>Antall personer:</span> 
 				</li>
 				<li>
-					<input name="pers" type="text" placeholder="Antall deltagere"/>
+					<input name="pers" type="number" placeholder="Antall deltagere"/>
 				</li>
            	</div>
 		
@@ -73,7 +73,7 @@
 	        		<label>Kommentarer:</label>
 				</li>
 				<li>
-    	    		<textarea id="message" name="message" rows="5" cols="40">Her kan du skrive eventulle kommentarer til oss.</textarea>
+    	    		<textarea id="message" name="message" rows="5" cols="40" placeholder="Eventuelle kommentarer som vi må ta hensyn til."></textarea>
 				</li>
 			</div>
 		
