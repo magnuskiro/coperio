@@ -352,6 +352,13 @@ img {
   vertical-align: middle;
   -ms-interpolation-mode: bicubic;
 }
+/* coperio addition */
+.article-intro img{
+	border: 2px solid;
+	border-color: #eee;
+	border-radius: 0px;
+}
+/* coperio addition end. */
 svg:not(:root) {
   overflow: hidden;
 }
