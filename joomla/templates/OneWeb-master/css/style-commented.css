@@ -95,10 +95,6 @@ section {
   display: block;
 }
 
-.enrollment{
-	height: 25em;
-}
-
 /* 1 ROOT 					============================================================================= */
 * {
     margin: 0;
@@ -370,6 +366,11 @@ figure figcaption {
   color: #777;
 }
 /* 7 TABLES 				============================================================================= */
+/*Coperio additions */
+table.contentpaneopen td{
+	padding-left:1%;
+}
+/*Coperio additions END */
 table {
     border-collapse: collapse;
     border-spacing: 0;
@@ -395,6 +396,14 @@ tbody tr:nth-child(odd) td {
     background-color: #f9f9f9;
 }
 /* 8 FORMS & BUTTONS		============================================================================= */
+form.enrollment li{
+	border-bottom-style:
+	border-bottom-width:2px;
+	border-color:black; 
+	text-align:left;
+}
+
+
 form fieldset {
   margin-bottom: 1.5em;
   padding: 0;
@@ -684,7 +693,7 @@ input[type="submit"]:active{
 	font-size:3.6rem;
 }
 #logo img{
-    width: 20%;
+    width: 25%;
 }
 #slogan{
 	color: #6699cc;

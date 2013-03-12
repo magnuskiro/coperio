@@ -51,7 +51,7 @@ Sitename out commented its the part in the top left. Changed to logo. -->
         </header>
     </a>                     	
     <span id="slogan" >
-    	<?php echo htmlspecialchars($app->getCfg('sitename'));?>
+    	<?php #echo htmlspecialchars($app->getCfg('sitename'));?>
     </span>
 </div>
 <div id="container">
