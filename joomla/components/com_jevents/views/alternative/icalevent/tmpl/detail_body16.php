@@ -28,6 +28,7 @@ if( array_key_exists('row',$this->data) ){
 
 	$dispatcher	=& JDispatcher::getInstance();
 	$params =new JParameter(null);
+	
 
 	if (isset($row)) {
 		$customresults = $dispatcher->trigger( 'onDisplayCustomFields', array( &$row) );
@@ -152,14 +153,14 @@ if( array_key_exists('row',$this->data) ){
 				?>
             </table>
             <!--  </div>  -->
-			<!-- Coperio addition -->
-			<?php include("enrollmentAddition/enrollment.php");  ?>
-			<!-- END Coperio addition -->
             <?php
 		} // end if not loaded from template
+#			<!-- Coperio addition -->
+				include("enrollmentAddition/enrollment.php");  
+#			<!-- END Coperio addition -->
             $results = $dispatcher->trigger( 'onAfterDisplayContent', array( &$row, &$params, $page ) );
             echo trim( implode( "\n", $results ) );
-
+			
         } else { ?>
             <table width="100%" border="0" cellspacing="0" cellpadding="0">
                 <tr>
