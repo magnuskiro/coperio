@@ -84,18 +84,17 @@ if (isset($_REQUEST['email'])){
 	if ( sanityCheck($_POST) ){
 
 	#send email
-#	$email = $_REQUEST['email'] ; 
-#	$subject = $_REQUEST['subject'] ;
-#	$message = $_REQUEST['message'] ;
-#	$headers = 'From: magnuskiro@coperio.no' . "\r\n" .
-#	'Reply-To: bedrift@coperio.no' . "\r\n" .
-#	'X-Mailer: PHP/' . phpversion();
-#	mail( $email,  $subject,$message,$headers );
+	$email = $_POST['email'] ; 
+	$subject = "Coperio Kurspåmelding" ;
+	$message = "This is the message" ;
+	$headers = 'From: Kurs@coperio.no' . "\r\n" .
+	'Reply-To: magnuskiro@coperio.no' . "\r\n" .
+	'X-Mailer: PHP/' . phpversion();
+	mail( $email,  $subject,$message,$headers );
 	echo "<span style='color:green'>Godkjent</span><br />Påmeldt til kurs, ".$_POST['time']."Takk for din interesse, du blir snart kontaktet med mer informasjon.";
 
 	}
-}else{
-	echo "........";
 }
+
 ?>
 
