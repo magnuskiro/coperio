@@ -1,17 +1,19 @@
 <?php
 
+$validationSuccess=null; 
+
 # checking the input to see if it is correct. 
 function sanityCheck($list){
 
 #	var_dump($list);
+# TODO captcha / bot secure. 
 
 	# clear for db injection. 
 	foreach($list as $element){
-		$element = preg_replace('/[";<>&*~|#]/', '', $element);
+		$e = preg_replace('/[";<>&*~|#i\[\]]/', '', $element);
 		#echo "<br>".$list."-".$element;
-		if($element == ""){
-			echo "Alle feltene må være utfylt";
-			return False;
+		if($e == ""){
+			err($element." er ikke gyldig input.");
 		}
 	}
 	
@@ -19,15 +21,13 @@ function sanityCheck($list){
 	$n = $list['name'];
 	# if var is not this or nor that or ... return false | if something is off, return false.
 	if( !is_string($n) || $n == "Navn" ){
-		echo "Navnet er feil, gå tilbake";
-		return False; 
+		err("Navnet er ikke gyldig. Gå tilbake for å endre.");
 	}
 	
 	# corp
 	$corp = $list['corp'];
 	if( !is_string($corp) || $corp == "Bedriftens navn"){
-		echo "Bedriftsnavnet er ikke gyldig";
-		return False; 
+		err("Bedriftsnavnet er ikke gyldig. Gå tilbake for å endre.");
 	}
 	
 	# time
@@ -35,39 +35,46 @@ function sanityCheck($list){
 #	$t = preg_quote('/<br \/>/', '', $t);
 #	echo $t; 
 	if($t == ""){
-		echo "Tidspunkt må være satt";
-		return False; 
+		err("Tidspunkt må være satt");
 	}
 
 	# phone
 	$p = $list['phone'];
 	if( !is_numeric($p) || $p == 00000000 ){
-		echo "Telefonnummeret er ikke et tall. Gå tilbake og rediger.";
-		return False; 
+		err("Telefonnummeret er ikke gyldig. Gå tilbake for å endre.");
 	}
 
 	# email
 	$e = $list['email'];
 	if( !is_string($e) || $e == "navn@bedrift.no" ){
-        echo "E-postadressen er ikke gyldig. Gå tilbake for å endre den.";
-        return False;
+         err("E-postadressen er ikke gyldig. Gå tilbake for å endre.");
     }	
 
 	# pers
 	$pr = $list['pers'];
     if( !is_numeric($pr) || $pr == 0 ){
-		echo "Deltagerantallet er ikke riktig. Gå tilbake og rediger.";
-        return False;
+		err("Deltagerantallet er ikke riktig. Gå tilbake for å endre.");
     }
 
 	# message
 	$m = $list['message']; 
 	if( !is_string($m) ){
-        echo "Meldingen inneholder ugyldige tegn.";
-        return False;
+        err("Meldingen inneholder ugyldige tegn.");
     }
+	if( $m == "Kommentarer til oss og spesielle ting vi skal ta hensyn til." ){
+		$list['message'] = ""; 
+	}
 
-	return True; 
+	if($validationSuccess){
+		return True;
+	}else{	
+		return False; 
+	}
+}
+
+function err($msg){
+	echo "<span style='color:red'>".$msg."</span><br />";
+	$validationSuccess = False; 
 }
 
 #if "email" is filled out, send email
@@ -84,7 +91,7 @@ if (isset($_REQUEST['email'])){
 #	'Reply-To: bedrift@coperio.no' . "\r\n" .
 #	'X-Mailer: PHP/' . phpversion();
 #	mail( $email,  $subject,$message,$headers );
-	echo "Påmeldt til kurs, ".$_POST['time']."Takk for din interesse, du blir snart kontaktet med mer informasjon.";
+	echo "<span style='color:green'>Godkjent</span><br />Påmeldt til kurs, ".$_POST['time']."Takk for din interesse, du blir snart kontaktet med mer informasjon.";
 
 	}
 }else{
