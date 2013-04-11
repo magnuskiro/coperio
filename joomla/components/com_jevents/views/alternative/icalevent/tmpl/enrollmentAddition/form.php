@@ -1,9 +1,8 @@
-
-
 <!-- 
 This is a backup file for the form used to enroll in a course. 
 It replaces the "eventDetailpage" template. 
 -->
+
 
 <table class="contentpaneopen" style="border: 0px;">
 <tbody>
@@ -41,7 +40,7 @@ It replaces the "eventDetailpage" template.
 </table>
 <!-- Coperio addition --><hr />
 <h2>Påmelding</h2>
-<form class="enrollment" action="enrollment.php" method="post">
+<form class="enrollment" action="enrollment.php" method="post"><input type="hidden" name="kurs" value="{{Title:TITLE}}" />
 <div class="formcontent">
 <ul>
 <li><span>Navn:</span></li>
@@ -91,4 +90,3 @@ It replaces the "eventDetailpage" template.
 </div>
 </form><hr /><!-- END Coperio addition -->
 <p> </p>
-
