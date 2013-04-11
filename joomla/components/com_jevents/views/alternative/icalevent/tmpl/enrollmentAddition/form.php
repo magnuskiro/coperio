@@ -11,19 +11,15 @@ It replaces the "eventDetailpage" template.
 <td class="contentheading" width="100%">{{Title:TITLE}}</td>
 <td class="buttonheading" align="right" width="20">{{Ical Button:ICALBUTTON}}</td>
 <td class="buttonheading" align="right" width="20">{{Edit Button:EDITBUTTON}}</td>
-<td> </td>
 </tr>
 <tr>
 <td colspan="4" align="left" valign="top">
 <table style="border: 0px; width: 100%;">
 <tbody>
 <tr>
-<td>
-<p><span style="line-height: 1.3em;">{{Repeat Summary:REPEATSUMMARY}} {{Previous/Next Links:PREVIOUSNEXT}}</span></p>
-</td>
-<td class="ev_detail contact"> </td>
-<td class="ev_detail hits"> </td>
-<td> </td>
+<td>{{Repeat Summary:REPEATSUMMARY}} {{Previous/Next Links:PREVIOUSNEXT}}</td>
+<td class="ev_detail contact">{{Creator:CREATOR}}</td>
+<td class="ev_detail hits">{{Hits:HITS}}</td>
 </tr>
 </tbody>
 </table>
@@ -94,4 +90,5 @@ It replaces the "eventDetailpage" template.
 </ul>
 </div>
 </form><hr /><!-- END Coperio addition -->
+<p> </p>
 
