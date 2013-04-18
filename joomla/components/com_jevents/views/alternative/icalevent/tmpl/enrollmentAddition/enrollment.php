@@ -85,46 +85,49 @@ if (isset($_POST['email'])){
 	#var_dump($_POST);	
 	if ( sanityCheck($_POST) ){
 
-	#send email
-
-	# the seminar application 
-	#$email = "kurs@coperio.no" ; 
-	$email = "bedrift@coperio.no" ; 
-	# email subject 
-	$subject = "Coperio Kurspåmelding" ;
-	# message body
-	$message = "Kurspåmelding: 
-
-	Kurs: 
-	".$_POST['kurs']."
-	".substr( $_POST['time'], 0, 38 )."\n
-	
-	Kontakt person: ".$_POST['name']."\t
-	Bedrift: ".$_POST['corp']."\t
-	Telefon: ".$_POST['phone']."\t
-	E-post: ".$_POST['email']."\t
-	Antall påmeldte: ".$_POST['pers']."\t
-	Kommentarer: 
-	".$_POST['message']."\n
-	";
-	
-	# email headers.
-	$headers = 'From: bedrift@coperio.no' . "\r\n" .
-	'Reply-To: ' . "$email \r\n" .
-	'X-Mailer: PHP/' . phpversion();
-	# sending the email 
-	mail( $email,  $subject, $message, $headers );
-	echo "<span style='color:green'>Din påmelding er registrert!</span><br />Påmeldt til kurs, ".$_POST['time']."Takk for din interesse, du blir snart kontaktet med mer informasjon.";
-
-
-	# Enrollment confirmation	
-	$email = $_POST['email'];
-	$message = "Kursbekreftelse: \n'\n".$message ."\n'\n Takk for interessen. Du vil snart bli kontaktet med mer informasjon.\n\n Mvh Bedriftshelsetjenesten Coperiosenteret\n";
-	$headers = 'From: bedrift@coperio.no' . "\r\n" .
-    'Reply-To: bedrift@coperio.no' . "\r\n" .
-    'X-Mailer: PHP/' . phpversion();
-
-	mail( $email, $subject, $message, $headers );
+    	#send email
+    
+    	# the seminar application 
+    	$coperio_mail = "bedrift@coperio.no" ; 
+    	#$email = "bedrift@coperio.no" ; 
+    	$email = "magnuskiro@coperio.no" ; 
+    	# email subject 
+    	$subject = "Coperio Kurspåmelding" ;
+    	# message body
+    	$message = "Kurspåmelding: 
+    
+    	Kurs: 
+    	".$_POST['kurs']."
+    	".substr( $_POST['time'], 0, 38 )."\n
+    	
+    	Kontakt person: ".$_POST['name']."\t
+    	Bedrift: ".$_POST['corp']."\t
+    	Telefon: ".$_POST['phone']."\t
+    	E-post: ".$_POST['email']."\t
+    	Antall påmeldte: ".$_POST['pers']."\t
+    	Kommentarer: 
+    	".$_POST['message']."\n
+    	";
+    	
+    	# email headers.
+    	$headers = 'From: bedrift@coperio.no' . "\r\n" .
+    	'Reply-To: ' . "$coperio_mail \r\n" .
+    	'X-Mailer: PHP/' . phpversion() .
+    	"Content-Type: text/html; charset=utf-8\r\n";
+    	# sending the email 
+    	mail( $email,  $subject, $message, $headers );
+    	echo "<span style='color:green'>Din påmelding er registrert!</span><br />Påmeldt til kurs, ".$_POST['time']."Takk for din interesse, du blir snart kontaktet med mer informasjon.";
+    
+    
+    	# Enrollment confirmation	
+    	$email = $_POST['email'];
+    	$message = "Kursbekreftelse: \n'\n".$message ."\n'\n Takk for interessen. Du vil snart bli kontaktet med mer informasjon.\n\n Mvh Bedriftshelsetjenesten Coperiosenteret\n";
+    	$headers = 'From: bedrift@coperio.no' . "\r\n" .
+        'Reply-To: bedrift@coperio.no' . "\r\n" .
+        'X-Mailer: PHP/' . phpversion() .
+    	"Content-Type: text/html; charset=utf-8\r\n";
+    
+    	mail( $email, $subject, $message, $headers );
 
 	}
 	else{
