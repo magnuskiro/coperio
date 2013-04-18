@@ -89,8 +89,8 @@ if (isset($_POST['email'])){
     
     	# the seminar application 
     	$coperio_mail = "bedrift@coperio.no" ; 
-    	#$email = "bedrift@coperio.no" ; 
-    	$email = "magnuskiro@coperio.no" ; 
+    	$email = $coperio_mail; 
+    	#$email = "magnuskiro@coperio.no" ; 
     	# email subject 
     	$subject = "Coperio Kurspåmelding" ;
     	# message body
