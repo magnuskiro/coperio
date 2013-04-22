@@ -1,3 +1,9 @@
+<?PHP
+
+header("Location: http://www.coperio.no/");
+
+?>
+
 <html>
 <head>
   <base href="http://www.coperio.no/" />

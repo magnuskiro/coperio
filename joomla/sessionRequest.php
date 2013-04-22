@@ -1,55 +1,5 @@
 <?php
 
-/*
-Form backup 
-
-
-d="sessionRequest"><form class="sessionRequest" action="sessionRequest.php" method="post">
-<h3>Timebestilling</h3>
-<table id="sessionRequest">
-<tbody>
-<tr>
-<td>
-<ul>
-<li><span>Navn:</span></li>
-<li><input onclick="javascript:this.form.name.focus();this.form.name.select();" type="text" name="name" value="Navn" /></li>
-</ul>
-</td>
-<td>
-<ul>
-<li><span>Telefon:</span></li>
-<li><input onclick="javascript:this.form.phone.focus();this.form.phone.select();" type="number" name="phone" value="00000000" /></li>
-</ul>
-</td>
-</tr>
-<tr>
-<td>
-<ul>
-<li><span>E-post:</span></li>
-<li><input onclick="javascript:this.form.email.focus();this.form.email.select();" type="text" name="email" value="din[at]epost.no" /></li>
-</ul>
-</td>
-<td>
-<ul>
-<li><span>Ønsket tid:</span></li>
-<li><input onclick="javascript:this.form.time.focus();this.form.time.select();" type="text" name="time" value="1 Jan, 00:00" /></li>
-</ul>
-</td>
-</tr>
-<tr>
-<td colspan="2">
-<ul>
-<li><span>Det gjelder:</span></li>
-<li><textarea id="message" onclick="javascript:this.form.message.focus();this.form.message.select();" name="message" rows="3" cols="40">Hva henvendelsen gjelder.</textarea></li>
-<li><input type="submit" name="submit" value="Bestill time" align="center" /></li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
-</form></div>
-*/
-
 # checking the input to see if it is correct. 
 function sanityCheck($list){
 
@@ -204,7 +154,36 @@ if (isset($_POST['email'])){
 	";
 
 }else{
-	header("Location: http://www.coperio.no/");
+	#header("Location: http://www.coperio.no/");
+echo "
+        <html>
+        <head>
+        <meta http-equiv='content-type' content='text/html; charset=utf-8' />
+        <link rel='stylesheet' href='templates/OneWeb-master/css/style-commented.css' type='text/css' />
+
+		</head>
+        <body>
+
+<div id='sessionRequest'><form class='sessionRequest' action='sessionRequest.php' method='post'>
+<h3>Timebestilling</h3>
+<ul>
+<li><span>Navn:</span></li>
+<li><input onclick='javascript:this.form.name.focus();this.form.name.select();' type='text' name='name' value='Navn' /></li>
+<li><span>Telefon:</span></li>
+<li><input onclick='javascript:this.form.phone.focus();this.form.phone.select();' type='number' name='phone' value='00000000' /></li>
+<li><span>E-post:</span></li>
+<li><input onclick='javascript:this.form.email.focus();this.form.email.select();' type='text' name='email' value='din[at]epost.no' /></li>
+<li><span>Ønsket tid:</span></li>
+<li><input onclick='javascript:this.form.time.focus();this.form.time.select();' type='text' name='time' value='1 Jan, 00:00' /></li>
+<li><span>Det gjelder:</span></li>
+<li><textarea id='message' onclick='javascript:this.form.message.focus();this.form.message.select();' name='message' rows='3' cols='40'>Hva henvendelsen gjelder.</textarea></li>
+<li><input type='submit' name='submit' value='Bestill time' align='center' /></li>
+</form></div>
+</body>
+</html>
+
+";
+
 }
 
 ?>

@@ -1167,28 +1167,11 @@ div #sessionRequest{
 div #sessionRequest input, textarea{
 	width: auto;
 	margin-bottom:1%;
-	text-align:center;
 }
 div #sessionRequest h3{
-	text-align: center;
 	margin-top: 1%;
 	margin-bottom: 0;
 	color: #7f9dc1;
-}
-div#sessionRequest table{
-	border: 0px solid #eee;
-	margin-bottom:0;
-}
-div#sessionRequest tbody{
-	border: 0px solid #eee;
-}
-div#sessionRequest tr{
-	border: 0px solid #eee;
-	margin-bottom:0;
-}
-div#sessionRequest td{
-	margin-bottom:0;
-	background-color:#FFF;
 }
 div#sessionRequest ul{
 	padding: 0 0 0 0;
@@ -1196,7 +1179,6 @@ div#sessionRequest ul{
 }
 div#sessionRequest li{
 	margin-bottom:0;
-	text-align:center;
 }
 
 #footer2 div .linked, .fb-like {
@@ -1237,7 +1219,7 @@ aside#rightbar ul{
 }
 #rightbar .menu li {
     margin-top: 1em; 
-    font-size: 0.9em;
+    font-size: 1em;
 	font-weight:normal;
 }
 #rightbar ul, ol {

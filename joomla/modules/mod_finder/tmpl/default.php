@@ -18,7 +18,7 @@ $lang->load('com_finder', JPATH_SITE);
 
 $suffix = $params->get('moduleclass_sfx');
 $output = '<input type="text" name="q" id="mod-finder-searchword" class="inputbox" size="' . $params->get('field_size', 20) . '" 
-value="' . htmlspecialchars(JFactory::getApplication()->input->get('q', '', 'string')) . 'Søkestreng"
+value="' . htmlspecialchars(JFactory::getApplication()->input->get('q', '', 'string')) . 'Søk..."
 onClick="javascript:this.form.q.focus();this.form.q.select();"
  />';
 $button = '';
