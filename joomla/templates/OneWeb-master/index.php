@@ -194,7 +194,10 @@ Sitename out commented its the part in the top left. Changed to logo. -->
 	<?php endif; ?>
 </div>                                      
 <footer id="creditRow" class="row clearfix">      
-    <div id="creditRight"><a href="http://joomlafuture.com" title="OneWeb, a free, responsive, html5 template for Joomla! 2.5+">OneWeb</a>, a free Joomla! template from <a href="http://internet-inspired.com" title="Internet Inspired - Professional Joomla! Websmithing">Internet Inspired!</a> &copy; <?php echo date("Y"); ?></div>				
+    <div id="creditRight">
+	For issues and  technical questions contact: <a href="mailto:webmaster@coperio.no?Subject=Coperio%20Nett">webmaster@coperio.no</a><br />
+	<a href="http://joomlafuture.com" title="OneWeb, a free, responsive, html5 template for Joomla! 2.5+">OneWeb</a>, a free Joomla! template from <a href="http://internet-inspired.com" title="Internet Inspired - Professional Joomla! Websmithing">Internet Inspired!</a> &copy; <?php echo date("Y"); ?>
+	</div>		
 </footer>
 <jdoc:include type="modules" name="debug"/>
 <?php if ($scripts > 0) : ?>
