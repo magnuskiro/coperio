@@ -1,5 +1,28 @@
 <?php
 
+/*
+Form backup 
+
+<div id="sessionRequest"><form class="sessionRequest" action="sessionRequest.php" method="post">
+<h3>Timebestilling</h3>
+<ul>
+<li><span>Navn:</span></li>
+<li><input onclick="javascript:this.form.name.focus();this.form.name.select();" type="text" name="name" value="Navn" /></li>
+<li><span>Telefon:</span></li>
+<li><input onclick="javascript:this.form.phone.focus();this.form.phone.select();" type="number" name="phone" value="00000000" /></li>
+<li><span>E-post:</span></li>
+<li><input onclick="javascript:this.form.email.focus();this.form.email.select();" type="text" name="email" value="din[at]epost.no" /></li>
+<li><span>Ønsket tid:</span></li>
+<li><input onclick="javascript:this.form.time.focus();this.form.time.select();" type="text" name="time" value="1 Jan, 00:00" /></li>
+<li><span>Det Gjelder:</span></li>
+<li><textarea id="message" onclick="javascript:this.form.message.focus();this.form.message.select();" name="message" rows="3" cols="40">Hva henvendelsen gjelder.</textarea></li>
+<li><input type="submit" name="submit" value="Bestill time" /></li>
+</ul>
+</form></div>
+
+
+*/
+
 # checking the input to see if it is correct. 
 function sanityCheck($list){
 
