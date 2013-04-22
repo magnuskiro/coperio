@@ -1156,6 +1156,22 @@ aside#sidebar {
 	float:left;
 }
 /* Coperio addition START*/
+div #sessionRequest{
+	float: left;
+	width: 35%;
+	margin-right: 2%;
+    border: 2px solid;
+    border-color: #eee;
+    border-radius: 0px;
+}
+div #sessionRequest input, textarea{
+	width: 85%;
+}
+div #sessionRequest h3{
+	text-align: center;
+	margin-top: 1%;
+}
+
 #footer2 div .linked, .fb-like {
     width: 25%; 
     float: left;
