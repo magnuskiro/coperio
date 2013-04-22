@@ -1158,26 +1158,55 @@ aside#sidebar {
 /* Coperio addition START*/
 div #sessionRequest{
 	float: left;
-	width: 35%;
+	width: 100%;
 	margin-right: 2%;
     border: 2px solid;
     border-color: #eee;
     border-radius: 0px;
 }
 div #sessionRequest input, textarea{
-	width: 85%;
+	width: auto;
+	margin-bottom:1%;
+	text-align:center;
 }
 div #sessionRequest h3{
 	text-align: center;
 	margin-top: 1%;
+	margin-bottom: 0;
+	color: #7f9dc1;
+}
+div#sessionRequest table{
+	border: 0px solid #eee;
+	margin-bottom:0;
+}
+div#sessionRequest tbody{
+	border: 0px solid #eee;
+}
+div#sessionRequest tr{
+	border: 0px solid #eee;
+	margin-bottom:0;
+}
+div#sessionRequest td{
+	margin-bottom:0;
+	background-color:#FFF;
+}
+div#sessionRequest ul{
+	padding: 0 0 0 0;
+	margin-bottom:0;
+}
+div#sessionRequest li{
+	margin-bottom:0;
+	text-align:center;
 }
 
 #footer2 div .linked, .fb-like {
-    width: 25%; 
     float: left;
 }
 #footer2 div span.linkedin{
     vertical-align: text-bottom;
+}
+div #right{
+	margin-top:5%; 
 }
 aside#rightbar {
 	width:30%;

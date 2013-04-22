@@ -3,24 +3,51 @@
 /*
 Form backup 
 
-<div id="sessionRequest"><form class="sessionRequest" action="sessionRequest.php" method="post">
+
+d="sessionRequest"><form class="sessionRequest" action="sessionRequest.php" method="post">
 <h3>Timebestilling</h3>
+<table id="sessionRequest">
+<tbody>
+<tr>
+<td>
 <ul>
 <li><span>Navn:</span></li>
 <li><input onclick="javascript:this.form.name.focus();this.form.name.select();" type="text" name="name" value="Navn" /></li>
+</ul>
+</td>
+<td>
+<ul>
 <li><span>Telefon:</span></li>
 <li><input onclick="javascript:this.form.phone.focus();this.form.phone.select();" type="number" name="phone" value="00000000" /></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<ul>
 <li><span>E-post:</span></li>
 <li><input onclick="javascript:this.form.email.focus();this.form.email.select();" type="text" name="email" value="din[at]epost.no" /></li>
+</ul>
+</td>
+<td>
+<ul>
 <li><span>Ønsket tid:</span></li>
 <li><input onclick="javascript:this.form.time.focus();this.form.time.select();" type="text" name="time" value="1 Jan, 00:00" /></li>
-<li><span>Det Gjelder:</span></li>
-<li><textarea id="message" onclick="javascript:this.form.message.focus();this.form.message.select();" name="message" rows="3" cols="40">Hva henvendelsen gjelder.</textarea></li>
-<li><input type="submit" name="submit" value="Bestill time" /></li>
 </ul>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<ul>
+<li><span>Det gjelder:</span></li>
+<li><textarea id="message" onclick="javascript:this.form.message.focus();this.form.message.select();" name="message" rows="3" cols="40">Hva henvendelsen gjelder.</textarea></li>
+<li><input type="submit" name="submit" value="Bestill time" align="center" /></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
 </form></div>
-
-
 */
 
 # checking the input to see if it is correct. 
@@ -115,21 +142,19 @@ if (isset($_POST['email'])){
     	#send email
     
     	# the seminar application email.  
-    	$coperio_mail = "magnuskiro@coperio.no" ; 
+    	$coperio_mail = "bedrift@coperio.no,adm@stud.ntnu.no"; 
     	$email = $coperio_mail; 
     	#$email = "magnuskiro@coperio.no" ; 
     	# email subject 
     	$subject = "Coperio Timebestilling" ;
     	# message body
     	$message = " 
-    	Timebestilling: 
-    	".substr( $_POST['time'], 0, 38 )."\n
-    	
-    	Navn: ".$_POST['name']."\t
-    	Telefon: ".$_POST['phone']."\t
-    	E-post: ".$_POST['email']."\t
-		Ønsker tid: ". $_POST['time'] ."
-    	Kommentarer: "
+    	Timebestilling:".	
+		"\n\tNavn: ".$_POST['name'].
+		"\n\tTelefon: ".$_POST['phone'].
+		"\n\tE-post: ".$_POST['email'].
+		"\n\tØnsket tid: ". $_POST['time'] .
+		"\n\tKommentarer: "
 		.$_POST['message'].
 		"\n";
     	
@@ -140,7 +165,7 @@ if (isset($_POST['email'])){
     	"Content-Type: text/html; charset=utf-8\r\n";
     	# sending the email 
     	mail( $email,  $subject, $message, $headers );
-    
+
     	# Enrollment confirmation	
     	$email = $_POST['email'];
     	$message = "Bestillingsbekreftelse: \n'\n".$message ."\n'\n Takk for interessen. Du vil snart bli kontaktet med mer informasjon.\n\n Mvh Coperiosenteret\n";
