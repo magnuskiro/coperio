@@ -15,9 +15,7 @@ include_once JPATH_THEMES . '/' . $this->template . '/logic.php';
 <!doctype html>
 <!-- HTML5 Boilerplate -->
 <!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if lt IE 9]> <html class="no-js ie" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
 <jdoc:include type="head" />
@@ -43,13 +41,12 @@ include_once JPATH_THEMES . '/' . $this->template . '/logic.php';
   <a id="mobileMenu" href="#menu" title="Jump to navigation">Menu</a>
 </div>
 <div id="logoRow" class="row clearfix">
-	<a href="<?php echo $this->baseurl ?>/" title="<?php echo htmlspecialchars($app->getCfg('sitename'));?>">        		
-<!-- 
-Sitename out commented its the part in the top left. Changed to logo. -->
         <header id="logo">
+	<a href="<?php echo $this->baseurl ?>/" title="<?php echo htmlspecialchars($app->getCfg('sitename'));?>">        		
+<!--Sitename out commented its the part in the top left. Changed to logo. -->
             <img src="images/logo/coperio_logo.png">
-        </header>
     </a>                     	
+        </header>
     <span id="slogan" >
     	<?php #echo htmlspecialchars($app->getCfg('sitename'));?>
     </span>
