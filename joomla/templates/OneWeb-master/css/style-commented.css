@@ -832,9 +832,9 @@ li.pagenav-next {float:right;}
 		border-top:1px solid #eee;
 }
 #main {
-		border-bottom:3px solid #eee;
-		margin-bottom:3em;
-		padding-bottom:3em;
+/*		border-bottom:3px solid #eee;*/
+		margin-bottom:1em;
+		padding-bottom:1em;
 }
 /* article */
 article.article {
@@ -874,6 +874,94 @@ dl.article-info dd {
 	float:left;
 	margin:0 0 0 .5em;
 }
+/* 14.2 RIGHT BAR           ============================================================================= */ 
+/* Coperio addition START*/
+div #sessionRequest{
+    float: left;
+    width: 100%;
+    margin-right: 2%;
+    border: 2px solid;
+    border-color: #eee;
+    border-radius: 0px;
+}
+div #sessionRequest input, textarea{
+    width: auto;
+    margin-bottom:1%;
+}
+div #sessionRequest h3{
+    margin-top: 1%;
+    margin-bottom: 0;
+    color: #7f9dc1;
+}
+div#sessionRequest ul{
+    padding: 0 0 0 0;
+    margin-bottom:0;
+}
+div#sessionRequest li{
+    margin-bottom:0;
+}
+
+#footer2 div .linked, .fb-like {
+    float: left;
+}
+#footer2 div span.linkedin{
+    vertical-align: text-bottom;
+}
+div #right{
+    margin-top:1%;
+}
+aside#rightbar {
+    width:100%;
+    margin-left:5%;
+    float:right;
+}
+aside#rightbar article{
+    width:100%;
+    float:left;
+    border:2px solid;
+    border-color: #eee;
+    border-radius:0px;
+   /* background-color: #EEE;*/
+
+    /*box-shadow: 10px 10px 5px #888888; */
+}
+aside#rightbar h3 {
+    margin-top: 1%;
+    text-align: center;
+    color: #7f9dc1;
+    font-size: 1.1em;
+}
+aside#rightbar h4 {
+    font-size: 0.9em;
+}
+aside#rightbar ul{
+    list-style-type: none;
+}
+#rightbar .menu li {
+    margin-top: 1em;
+    font-size: 1em;
+    font-weight:normal;
+}
+#rightbar ul, ol {
+    text-decoration: none;
+    margin: 0 0 1em 0;
+    text-align: center;
+    padding: 0 0 0 0;
+}
+#rightbar form{
+    text-align:center;
+}
+input.inputbox{
+    margin-top:1%;
+    margin-bottom:0;
+    padding: 0 0 0 0;
+    width:70%;
+    text-indent:5%;
+}
+#rightbar button{
+    margin-left: 1%;
+}
+/* Coperio addition END*/
 
 /* 15 COMPLEMENTARY 		============================================================================= */
 /* 16 BOTTOM 				============================================================================= */
@@ -1157,6 +1245,22 @@ aside#sidebar {
 	margin-right:5%;
 	float:left;
 }
+#left .itp-socialbuttons-mod {
+    margin-top: 100%;
+}
+#left article {
+    margin-right:0;
+    width:100%;
+}
+#main {
+    border-bottom:0;
+    margin-bottom:0;
+}
+#main.mainLeft {
+    width:65%;
+    float:left;
+}
+/* 14.2 RIGHT BAR 			============================================================================= */
 /* Coperio addition START*/
 div #sessionRequest{
 	float: left;
@@ -1245,21 +1349,7 @@ aside#rightbar ul{
 	margin-left: 1%; 
 }
 /* Coperio addition END*/
-#left .itp-socialbuttons-mod {
-    margin-top: 100%;
-}
-#left article {
-	margin-right:0;
-	width:100%;
-}
-#main {
-	border-bottom:0;
-	margin-bottom:0;
-}
-#main.mainLeft {
-	width:65%;
-	float:left;
-}
+
 /* 15 COMPLEMENTARY 		============================================================================= */
 /* 16 BOTTOM 				============================================================================= */
 #bottomRow {
