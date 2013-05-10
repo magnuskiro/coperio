@@ -635,7 +635,7 @@ input[type="submit"] {
     position: relative;
 	text-align:center;
     margin: 1em 0;
-	padding: .5em .75em;
+	padding: .59em .7em;
 	color:#fff;
 	text-shadow:0px 1px 0px rgba(0,0,0,.45);
 background: rgb(167,199,220);
@@ -700,7 +700,6 @@ input[type="submit"]:active{
 	font-size:3.6rem;
 }
 #logo img{
-    width: 25%;
 }
 #slogan{
 	color: #6699cc;
@@ -1120,12 +1119,15 @@ select {
 	padding:40px 0 20px;
 	padding:4rem 0 2rem;
 }
+#logo {
+	width:25%;
+}
 /* 11 NAVIGATION			============================================================================= */
 #menu {
 	position:absolute;
 	width:75%;
-	top:40px;
-	top:4rem;
+	top:60px;
+	top:6rem;
 	right:0;
 }
 #menu.row {
@@ -1137,7 +1139,7 @@ nav ul.menu {
 }
 nav li {
 	width:auto;
-	margin:0 0 0 1.3em;
+	margin:0 0 0 0.5em;
 }
 nav li a {
 	text-align:center;
@@ -1233,7 +1235,11 @@ aside#rightbar ul{
 	text-align:center;
 }
 #rightbar input.inputbox{
-	width:auto; 
+	margin-top:5%;
+	margin-bottom:0;
+	padding: 0 0 0 0;
+	width:70%;
+	text-indent:5%; 
 }
 #rightbar button{
 	margin-left: 1%; 
