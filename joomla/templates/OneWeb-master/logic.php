@@ -68,7 +68,8 @@ $doc->addCustomTag('<script src="'.$template.'/js/modernizr-2.5.3.min.js"></scri
 }
 // Currently the latest minified version from Google. Change the version no. here if you want
 if ($jQuery) {
-  $doc->addCustomTag('<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>');
+  $doc->addCustomTag('<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>');
+  $doc->addCustomTag('<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>');
 }
 // Site icons: http://mathiasbynens.be/notes/touch-icons 
 // For third-generation iPad with high-resolution Retina display:
