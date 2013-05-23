@@ -745,10 +745,15 @@ nav li {
 /* Coperio edited section START*/
 .menu .current a{
 /*  background: #f9f9f9; */
-    background: #d9d9d9;
+    background-color: #d9d9d9;
     padding-right: 1em;
     padding-left: 1em; 
 }
+/* Submenu item background-color: */
+.menu .current ul a {
+    background-color: #FFF;
+}
+
 nav li a {
 	display:block;
 	padding:1em;
