@@ -1,0 +1,25 @@
+
+Teknikker som installerte: 
+Rune - 94530877
+
+#login web (firefox): 
+addres: 192.168.0.181
+bruker: vanlig/admin
+passord: 12345678
+
+# windows
+
+use pcl6 driver from web. 
+lpr port
+slå av snmp
+
+byte counting
+snmp
+lpr portnavn: PORT1
+
+# Linux
+driver: http://www.konicaminolta.eu/en/business-solutions/support/download-center/download-result.html?packageId=38861&productName=bizhub%20C650
+
+# use:
+print direct from web interface in firefox. 
+
