@@ -171,5 +171,6 @@ joomla/configuration.php
 joomla/index.php
 joomla/joomla.xml
 joomla/*.txt
-passwords
+*passwords*
 configuration.php
+msBruker.txt
